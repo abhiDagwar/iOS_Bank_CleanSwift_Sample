@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A60A6914235756E900718DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6913235756E900718DF7 /* AppDelegate.swift */; };
+		A60A6916235756E900718DF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6915235756E900718DF7 /* ViewController.swift */; };
+		A60A6919235756E900718DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60A6917235756E900718DF7 /* Main.storyboard */; };
+		A60A691B235756E900718DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60A691A235756E900718DF7 /* Assets.xcassets */; };
+		A60A691E235756E900718DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60A691C235756E900718DF7 /* LaunchScreen.storyboard */; };
+		A60A6929235756EA00718DF7 /* CleanSwiftBankTestSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6928235756EA00718DF7 /* CleanSwiftBankTestSampleTests.swift */; };
+		A60A6934235756EA00718DF7 /* CleanSwiftBankTestSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6933235756EA00718DF7 /* CleanSwiftBankTestSampleUITests.swift */; };
+		A60A695F2357579F00718DF7 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69432357579E00718DF7 /* LoginRequest.swift */; };
+		A60A69602357579F00718DF7 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69432357579E00718DF7 /* LoginRequest.swift */; };
+		A60A69612357579F00718DF7 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69432357579E00718DF7 /* LoginRequest.swift */; };
+		A60A69622357579F00718DF7 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69452357579E00718DF7 /* LoginResponse.swift */; };
+		A60A69632357579F00718DF7 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69452357579E00718DF7 /* LoginResponse.swift */; };
+		A60A69642357579F00718DF7 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69452357579E00718DF7 /* LoginResponse.swift */; };
+		A60A69652357579F00718DF7 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69482357579E00718DF7 /* HomeInteractor.swift */; };
+		A60A69662357579F00718DF7 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69482357579E00718DF7 /* HomeInteractor.swift */; };
+		A60A69672357579F00718DF7 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69482357579E00718DF7 /* HomeInteractor.swift */; };
+		A60A69682357579F00718DF7 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69492357579E00718DF7 /* HomeModels.swift */; };
+		A60A69692357579F00718DF7 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69492357579E00718DF7 /* HomeModels.swift */; };
+		A60A696A2357579F00718DF7 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69492357579E00718DF7 /* HomeModels.swift */; };
+		A60A696B2357579F00718DF7 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694A2357579E00718DF7 /* HomePresenter.swift */; };
+		A60A696C2357579F00718DF7 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694A2357579E00718DF7 /* HomePresenter.swift */; };
+		A60A696D2357579F00718DF7 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694A2357579E00718DF7 /* HomePresenter.swift */; };
+		A60A696E2357579F00718DF7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694B2357579E00718DF7 /* HomeRouter.swift */; };
+		A60A696F2357579F00718DF7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694B2357579E00718DF7 /* HomeRouter.swift */; };
+		A60A69702357579F00718DF7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694B2357579E00718DF7 /* HomeRouter.swift */; };
+		A60A69712357579F00718DF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694C2357579E00718DF7 /* HomeViewController.swift */; };
+		A60A69722357579F00718DF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694C2357579E00718DF7 /* HomeViewController.swift */; };
+		A60A69732357579F00718DF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694C2357579E00718DF7 /* HomeViewController.swift */; };
+		A60A69742357579F00718DF7 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694D2357579E00718DF7 /* HomeWorker.swift */; };
+		A60A69752357579F00718DF7 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694D2357579E00718DF7 /* HomeWorker.swift */; };
+		A60A69762357579F00718DF7 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694D2357579E00718DF7 /* HomeWorker.swift */; };
+		A60A69772357579F00718DF7 /* TestBankLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694F2357579E00718DF7 /* TestBankLoginInteractor.swift */; };
+		A60A69782357579F00718DF7 /* TestBankLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694F2357579E00718DF7 /* TestBankLoginInteractor.swift */; };
+		A60A69792357579F00718DF7 /* TestBankLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694F2357579E00718DF7 /* TestBankLoginInteractor.swift */; };
+		A60A697A2357579F00718DF7 /* TestBankLoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69502357579E00718DF7 /* TestBankLoginModels.swift */; };
+		A60A697B2357579F00718DF7 /* TestBankLoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69502357579E00718DF7 /* TestBankLoginModels.swift */; };
+		A60A697C2357579F00718DF7 /* TestBankLoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69502357579E00718DF7 /* TestBankLoginModels.swift */; };
+		A60A697D2357579F00718DF7 /* TestBankLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69512357579E00718DF7 /* TestBankLoginPresenter.swift */; };
+		A60A697E2357579F00718DF7 /* TestBankLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69512357579E00718DF7 /* TestBankLoginPresenter.swift */; };
+		A60A697F2357579F00718DF7 /* TestBankLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69512357579E00718DF7 /* TestBankLoginPresenter.swift */; };
+		A60A69802357579F00718DF7 /* TestBankLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69522357579E00718DF7 /* TestBankLoginRouter.swift */; };
+		A60A69812357579F00718DF7 /* TestBankLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69522357579E00718DF7 /* TestBankLoginRouter.swift */; };
+		A60A69822357579F00718DF7 /* TestBankLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69522357579E00718DF7 /* TestBankLoginRouter.swift */; };
+		A60A69832357579F00718DF7 /* TestBankLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69532357579E00718DF7 /* TestBankLoginViewController.swift */; };
+		A60A69842357579F00718DF7 /* TestBankLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69532357579E00718DF7 /* TestBankLoginViewController.swift */; };
+		A60A69852357579F00718DF7 /* TestBankLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69532357579E00718DF7 /* TestBankLoginViewController.swift */; };
+		A60A69862357579F00718DF7 /* TestBankLoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69542357579E00718DF7 /* TestBankLoginWorker.swift */; };
+		A60A69872357579F00718DF7 /* TestBankLoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69542357579E00718DF7 /* TestBankLoginWorker.swift */; };
+		A60A69882357579F00718DF7 /* TestBankLoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69542357579E00718DF7 /* TestBankLoginWorker.swift */; };
+		A60A69892357579F00718DF7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69572357579F00718DF7 /* Network.swift */; };
+		A60A698A2357579F00718DF7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69572357579F00718DF7 /* Network.swift */; };
+		A60A698B2357579F00718DF7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69572357579F00718DF7 /* Network.swift */; };
+		A60A698C2357579F00718DF7 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69592357579F00718DF7 /* NetworkRouter.swift */; };
+		A60A698D2357579F00718DF7 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69592357579F00718DF7 /* NetworkRouter.swift */; };
+		A60A698E2357579F00718DF7 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69592357579F00718DF7 /* NetworkRouter.swift */; };
+		A60A698F2357579F00718DF7 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A60A695B2357579F00718DF7 /* Logo.png */; };
+		A60A69902357579F00718DF7 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A60A695B2357579F00718DF7 /* Logo.png */; };
+		A60A69912357579F00718DF7 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A60A695B2357579F00718DF7 /* Logo.png */; };
+		A60A69922357579F00718DF7 /* logout 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A60A695C2357579F00718DF7 /* logout 2.png */; };
+		A60A69932357579F00718DF7 /* logout 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A60A695C2357579F00718DF7 /* logout 2.png */; };
+		A60A69942357579F00718DF7 /* logout 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A60A695C2357579F00718DF7 /* logout 2.png */; };
+		A60A69952357579F00718DF7 /* AuthenticationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A695E2357579F00718DF7 /* AuthenticationWorker.swift */; };
+		A60A69962357579F00718DF7 /* AuthenticationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A695E2357579F00718DF7 /* AuthenticationWorker.swift */; };
+		A60A69972357579F00718DF7 /* AuthenticationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A695E2357579F00718DF7 /* AuthenticationWorker.swift */; };
+		A60A699A235781FB00718DF7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6999235781FB00718DF7 /* Utils.swift */; };
+		A60A699B235781FB00718DF7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6999235781FB00718DF7 /* Utils.swift */; };
+		A60A699C235781FB00718DF7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6999235781FB00718DF7 /* Utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A60A6925235756EA00718DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A60A6908235756E900718DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60A690F235756E900718DF7;
+			remoteInfo = CleanSwiftBankTestSample;
+		};
+		A60A6930235756EA00718DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A60A6908235756E900718DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60A690F235756E900718DF7;
+			remoteInfo = CleanSwiftBankTestSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A60A6910235756E900718DF7 /* CleanSwiftBankTestSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwiftBankTestSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60A6913235756E900718DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A60A6915235756E900718DF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A60A6918235756E900718DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A60A691A235756E900718DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A60A691D235756E900718DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A60A691F235756E900718DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60A6924235756EA00718DF7 /* CleanSwiftBankTestSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanSwiftBankTestSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60A6928235756EA00718DF7 /* CleanSwiftBankTestSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSwiftBankTestSampleTests.swift; sourceTree = "<group>"; };
+		A60A692A235756EA00718DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60A692F235756EA00718DF7 /* CleanSwiftBankTestSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanSwiftBankTestSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60A6933235756EA00718DF7 /* CleanSwiftBankTestSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSwiftBankTestSampleUITests.swift; sourceTree = "<group>"; };
+		A60A6935235756EA00718DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60A69432357579E00718DF7 /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		A60A69452357579E00718DF7 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		A60A69482357579E00718DF7 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		A60A69492357579E00718DF7 /* HomeModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		A60A694A2357579E00718DF7 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		A60A694B2357579E00718DF7 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		A60A694C2357579E00718DF7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A60A694D2357579E00718DF7 /* HomeWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		A60A694F2357579E00718DF7 /* TestBankLoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBankLoginInteractor.swift; sourceTree = "<group>"; };
+		A60A69502357579E00718DF7 /* TestBankLoginModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBankLoginModels.swift; sourceTree = "<group>"; };
+		A60A69512357579E00718DF7 /* TestBankLoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBankLoginPresenter.swift; sourceTree = "<group>"; };
+		A60A69522357579E00718DF7 /* TestBankLoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBankLoginRouter.swift; sourceTree = "<group>"; };
+		A60A69532357579E00718DF7 /* TestBankLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBankLoginViewController.swift; sourceTree = "<group>"; };
+		A60A69542357579E00718DF7 /* TestBankLoginWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBankLoginWorker.swift; sourceTree = "<group>"; };
+		A60A69572357579F00718DF7 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		A60A69592357579F00718DF7 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		A60A695B2357579F00718DF7 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		A60A695C2357579F00718DF7 /* logout 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logout 2.png"; sourceTree = "<group>"; };
+		A60A695E2357579F00718DF7 /* AuthenticationWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationWorker.swift; sourceTree = "<group>"; };
+		A60A6999235781FB00718DF7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A60A690D235756E900718DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60A6921235756EA00718DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60A692C235756EA00718DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A60A6907235756E900718DF7 = {
+			isa = PBXGroup;
+			children = (
+				A60A6912235756E900718DF7 /* CleanSwiftBankTestSample */,
+				A60A6927235756EA00718DF7 /* CleanSwiftBankTestSampleTests */,
+				A60A6932235756EA00718DF7 /* CleanSwiftBankTestSampleUITests */,
+				A60A6911235756E900718DF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A60A6911235756E900718DF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A60A6910235756E900718DF7 /* CleanSwiftBankTestSample.app */,
+				A60A6924235756EA00718DF7 /* CleanSwiftBankTestSampleTests.xctest */,
+				A60A692F235756EA00718DF7 /* CleanSwiftBankTestSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A60A6912235756E900718DF7 /* CleanSwiftBankTestSample */ = {
+			isa = PBXGroup;
+			children = (
+				A60A6998235781BA00718DF7 /* Utils */,
+				A60A69412357579E00718DF7 /* Model */,
+				A60A695A2357579F00718DF7 /* Resources */,
+				A60A69462357579E00718DF7 /* Scenes */,
+				A60A69552357579F00718DF7 /* Service */,
+				A60A695D2357579F00718DF7 /* Shared */,
+				A60A6913235756E900718DF7 /* AppDelegate.swift */,
+				A60A6915235756E900718DF7 /* ViewController.swift */,
+				A60A6917235756E900718DF7 /* Main.storyboard */,
+				A60A691A235756E900718DF7 /* Assets.xcassets */,
+				A60A691C235756E900718DF7 /* LaunchScreen.storyboard */,
+				A60A691F235756E900718DF7 /* Info.plist */,
+			);
+			path = CleanSwiftBankTestSample;
+			sourceTree = "<group>";
+		};
+		A60A6927235756EA00718DF7 /* CleanSwiftBankTestSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A60A6928235756EA00718DF7 /* CleanSwiftBankTestSampleTests.swift */,
+				A60A692A235756EA00718DF7 /* Info.plist */,
+			);
+			path = CleanSwiftBankTestSampleTests;
+			sourceTree = "<group>";
+		};
+		A60A6932235756EA00718DF7 /* CleanSwiftBankTestSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A60A6933235756EA00718DF7 /* CleanSwiftBankTestSampleUITests.swift */,
+				A60A6935235756EA00718DF7 /* Info.plist */,
+			);
+			path = CleanSwiftBankTestSampleUITests;
+			sourceTree = "<group>";
+		};
+		A60A69412357579E00718DF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A60A69422357579E00718DF7 /* Request */,
+				A60A69442357579E00718DF7 /* Response */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A60A69422357579E00718DF7 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				A60A69432357579E00718DF7 /* LoginRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		A60A69442357579E00718DF7 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				A60A69452357579E00718DF7 /* LoginResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		A60A69462357579E00718DF7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A60A69472357579E00718DF7 /* Home */,
+				A60A694E2357579E00718DF7 /* TestBankLogin */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A60A69472357579E00718DF7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A60A69482357579E00718DF7 /* HomeInteractor.swift */,
+				A60A69492357579E00718DF7 /* HomeModels.swift */,
+				A60A694A2357579E00718DF7 /* HomePresenter.swift */,
+				A60A694B2357579E00718DF7 /* HomeRouter.swift */,
+				A60A694C2357579E00718DF7 /* HomeViewController.swift */,
+				A60A694D2357579E00718DF7 /* HomeWorker.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A60A694E2357579E00718DF7 /* TestBankLogin */ = {
+			isa = PBXGroup;
+			children = (
+				A60A694F2357579E00718DF7 /* TestBankLoginInteractor.swift */,
+				A60A69502357579E00718DF7 /* TestBankLoginModels.swift */,
+				A60A69512357579E00718DF7 /* TestBankLoginPresenter.swift */,
+				A60A69522357579E00718DF7 /* TestBankLoginRouter.swift */,
+				A60A69532357579E00718DF7 /* TestBankLoginViewController.swift */,
+				A60A69542357579E00718DF7 /* TestBankLoginWorker.swift */,
+			);
+			path = TestBankLogin;
+			sourceTree = "<group>";
+		};
+		A60A69552357579F00718DF7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A60A69562357579F00718DF7 /* Network */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A60A69562357579F00718DF7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A60A69572357579F00718DF7 /* Network.swift */,
+				A60A69582357579F00718DF7 /* Router */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A60A69582357579F00718DF7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A60A69592357579F00718DF7 /* NetworkRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A60A695A2357579F00718DF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A60A695B2357579F00718DF7 /* Logo.png */,
+				A60A695C2357579F00718DF7 /* logout 2.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A60A695D2357579F00718DF7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A60A695E2357579F00718DF7 /* AuthenticationWorker.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A60A6998235781BA00718DF7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A60A6999235781FB00718DF7 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A60A690F235756E900718DF7 /* CleanSwiftBankTestSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60A6938235756EA00718DF7 /* Build configuration list for PBXNativeTarget "CleanSwiftBankTestSample" */;
+			buildPhases = (
+				A60A690C235756E900718DF7 /* Sources */,
+				A60A690D235756E900718DF7 /* Frameworks */,
+				A60A690E235756E900718DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CleanSwiftBankTestSample;
+			productName = CleanSwiftBankTestSample;
+			productReference = A60A6910235756E900718DF7 /* CleanSwiftBankTestSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A60A6923235756EA00718DF7 /* CleanSwiftBankTestSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60A693B235756EA00718DF7 /* Build configuration list for PBXNativeTarget "CleanSwiftBankTestSampleTests" */;
+			buildPhases = (
+				A60A6920235756EA00718DF7 /* Sources */,
+				A60A6921235756EA00718DF7 /* Frameworks */,
+				A60A6922235756EA00718DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A60A6926235756EA00718DF7 /* PBXTargetDependency */,
+			);
+			name = CleanSwiftBankTestSampleTests;
+			productName = CleanSwiftBankTestSampleTests;
+			productReference = A60A6924235756EA00718DF7 /* CleanSwiftBankTestSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A60A692E235756EA00718DF7 /* CleanSwiftBankTestSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60A693E235756EA00718DF7 /* Build configuration list for PBXNativeTarget "CleanSwiftBankTestSampleUITests" */;
+			buildPhases = (
+				A60A692B235756EA00718DF7 /* Sources */,
+				A60A692C235756EA00718DF7 /* Frameworks */,
+				A60A692D235756EA00718DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A60A6931235756EA00718DF7 /* PBXTargetDependency */,
+			);
+			name = CleanSwiftBankTestSampleUITests;
+			productName = CleanSwiftBankTestSampleUITests;
+			productReference = A60A692F235756EA00718DF7 /* CleanSwiftBankTestSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A60A6908235756E900718DF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Abhishek D";
+				TargetAttributes = {
+					A60A690F235756E900718DF7 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					A60A6923235756EA00718DF7 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A60A690F235756E900718DF7;
+					};
+					A60A692E235756EA00718DF7 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A60A690F235756E900718DF7;
+					};
+				};
+			};
+			buildConfigurationList = A60A690B235756E900718DF7 /* Build configuration list for PBXProject "CleanSwiftBankTestSample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A60A6907235756E900718DF7;
+			productRefGroup = A60A6911235756E900718DF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60A690F235756E900718DF7 /* CleanSwiftBankTestSample */,
+				A60A6923235756EA00718DF7 /* CleanSwiftBankTestSampleTests */,
+				A60A692E235756EA00718DF7 /* CleanSwiftBankTestSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60A690E235756E900718DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60A698F2357579F00718DF7 /* Logo.png in Resources */,
+				A60A691E235756E900718DF7 /* LaunchScreen.storyboard in Resources */,
+				A60A691B235756E900718DF7 /* Assets.xcassets in Resources */,
+				A60A69922357579F00718DF7 /* logout 2.png in Resources */,
+				A60A6919235756E900718DF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60A6922235756EA00718DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60A69902357579F00718DF7 /* Logo.png in Resources */,
+				A60A69932357579F00718DF7 /* logout 2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60A692D235756EA00718DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60A69912357579F00718DF7 /* Logo.png in Resources */,
+				A60A69942357579F00718DF7 /* logout 2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60A690C235756E900718DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60A696B2357579F00718DF7 /* HomePresenter.swift in Sources */,
+				A60A697A2357579F00718DF7 /* TestBankLoginModels.swift in Sources */,
+				A60A695F2357579F00718DF7 /* LoginRequest.swift in Sources */,
+				A60A69862357579F00718DF7 /* TestBankLoginWorker.swift in Sources */,
+				A60A6916235756E900718DF7 /* ViewController.swift in Sources */,
+				A60A69622357579F00718DF7 /* LoginResponse.swift in Sources */,
+				A60A69652357579F00718DF7 /* HomeInteractor.swift in Sources */,
+				A60A69802357579F00718DF7 /* TestBankLoginRouter.swift in Sources */,
+				A60A69712357579F00718DF7 /* HomeViewController.swift in Sources */,
+				A60A69952357579F00718DF7 /* AuthenticationWorker.swift in Sources */,
+				A60A696E2357579F00718DF7 /* HomeRouter.swift in Sources */,
+				A60A69892357579F00718DF7 /* Network.swift in Sources */,
+				A60A69832357579F00718DF7 /* TestBankLoginViewController.swift in Sources */,
+				A60A69682357579F00718DF7 /* HomeModels.swift in Sources */,
+				A60A69742357579F00718DF7 /* HomeWorker.swift in Sources */,
+				A60A699A235781FB00718DF7 /* Utils.swift in Sources */,
+				A60A69772357579F00718DF7 /* TestBankLoginInteractor.swift in Sources */,
+				A60A6914235756E900718DF7 /* AppDelegate.swift in Sources */,
+				A60A697D2357579F00718DF7 /* TestBankLoginPresenter.swift in Sources */,
+				A60A698C2357579F00718DF7 /* NetworkRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60A6920235756EA00718DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60A6929235756EA00718DF7 /* CleanSwiftBankTestSampleTests.swift in Sources */,
+				A60A69752357579F00718DF7 /* HomeWorker.swift in Sources */,
+				A60A698A2357579F00718DF7 /* Network.swift in Sources */,
+				A60A69692357579F00718DF7 /* HomeModels.swift in Sources */,
+				A60A696F2357579F00718DF7 /* HomeRouter.swift in Sources */,
+				A60A69722357579F00718DF7 /* HomeViewController.swift in Sources */,
+				A60A697B2357579F00718DF7 /* TestBankLoginModels.swift in Sources */,
+				A60A69962357579F00718DF7 /* AuthenticationWorker.swift in Sources */,
+				A60A69812357579F00718DF7 /* TestBankLoginRouter.swift in Sources */,
+				A60A69602357579F00718DF7 /* LoginRequest.swift in Sources */,
+				A60A69782357579F00718DF7 /* TestBankLoginInteractor.swift in Sources */,
+				A60A697E2357579F00718DF7 /* TestBankLoginPresenter.swift in Sources */,
+				A60A696C2357579F00718DF7 /* HomePresenter.swift in Sources */,
+				A60A69632357579F00718DF7 /* LoginResponse.swift in Sources */,
+				A60A69872357579F00718DF7 /* TestBankLoginWorker.swift in Sources */,
+				A60A698D2357579F00718DF7 /* NetworkRouter.swift in Sources */,
+				A60A69842357579F00718DF7 /* TestBankLoginViewController.swift in Sources */,
+				A60A699B235781FB00718DF7 /* Utils.swift in Sources */,
+				A60A69662357579F00718DF7 /* HomeInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60A692B235756EA00718DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60A6934235756EA00718DF7 /* CleanSwiftBankTestSampleUITests.swift in Sources */,
+				A60A69762357579F00718DF7 /* HomeWorker.swift in Sources */,
+				A60A698B2357579F00718DF7 /* Network.swift in Sources */,
+				A60A696A2357579F00718DF7 /* HomeModels.swift in Sources */,
+				A60A69702357579F00718DF7 /* HomeRouter.swift in Sources */,
+				A60A69732357579F00718DF7 /* HomeViewController.swift in Sources */,
+				A60A697C2357579F00718DF7 /* TestBankLoginModels.swift in Sources */,
+				A60A69972357579F00718DF7 /* AuthenticationWorker.swift in Sources */,
+				A60A69822357579F00718DF7 /* TestBankLoginRouter.swift in Sources */,
+				A60A69612357579F00718DF7 /* LoginRequest.swift in Sources */,
+				A60A69792357579F00718DF7 /* TestBankLoginInteractor.swift in Sources */,
+				A60A697F2357579F00718DF7 /* TestBankLoginPresenter.swift in Sources */,
+				A60A696D2357579F00718DF7 /* HomePresenter.swift in Sources */,
+				A60A69642357579F00718DF7 /* LoginResponse.swift in Sources */,
+				A60A69882357579F00718DF7 /* TestBankLoginWorker.swift in Sources */,
+				A60A698E2357579F00718DF7 /* NetworkRouter.swift in Sources */,
+				A60A69852357579F00718DF7 /* TestBankLoginViewController.swift in Sources */,
+				A60A699C235781FB00718DF7 /* Utils.swift in Sources */,
+				A60A69672357579F00718DF7 /* HomeInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A60A6926235756EA00718DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60A690F235756E900718DF7 /* CleanSwiftBankTestSample */;
+			targetProxy = A60A6925235756EA00718DF7 /* PBXContainerItemProxy */;
+		};
+		A60A6931235756EA00718DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60A690F235756E900718DF7 /* CleanSwiftBankTestSample */;
+			targetProxy = A60A6930235756EA00718DF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A60A6917235756E900718DF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60A6918235756E900718DF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A60A691C235756E900718DF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60A691D235756E900718DF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A60A6936235756EA00718DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A60A6937235756EA00718DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A60A6939235756EA00718DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanSwiftBankTestSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InterviewTests.CleanSwiftBankTestSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A60A693A235756EA00718DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanSwiftBankTestSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InterviewTests.CleanSwiftBankTestSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A60A693C235756EA00718DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanSwiftBankTestSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InterviewTests.CleanSwiftBankTestSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanSwiftBankTestSample.app/CleanSwiftBankTestSample";
+			};
+			name = Debug;
+		};
+		A60A693D235756EA00718DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanSwiftBankTestSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InterviewTests.CleanSwiftBankTestSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanSwiftBankTestSample.app/CleanSwiftBankTestSample";
+			};
+			name = Release;
+		};
+		A60A693F235756EA00718DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanSwiftBankTestSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InterviewTests.CleanSwiftBankTestSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CleanSwiftBankTestSample;
+			};
+			name = Debug;
+		};
+		A60A6940235756EA00718DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CleanSwiftBankTestSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InterviewTests.CleanSwiftBankTestSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CleanSwiftBankTestSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60A690B235756E900718DF7 /* Build configuration list for PBXProject "CleanSwiftBankTestSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60A6936235756EA00718DF7 /* Debug */,
+				A60A6937235756EA00718DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60A6938235756EA00718DF7 /* Build configuration list for PBXNativeTarget "CleanSwiftBankTestSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60A6939235756EA00718DF7 /* Debug */,
+				A60A693A235756EA00718DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60A693B235756EA00718DF7 /* Build configuration list for PBXNativeTarget "CleanSwiftBankTestSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60A693C235756EA00718DF7 /* Debug */,
+				A60A693D235756EA00718DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60A693E235756EA00718DF7 /* Build configuration list for PBXNativeTarget "CleanSwiftBankTestSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60A693F235756EA00718DF7 /* Debug */,
+				A60A6940235756EA00718DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A60A6908235756E900718DF7 /* Project object */;
+}
