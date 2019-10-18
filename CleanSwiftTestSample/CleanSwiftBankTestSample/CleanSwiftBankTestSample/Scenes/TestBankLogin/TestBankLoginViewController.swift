@@ -76,6 +76,10 @@ class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
     @IBOutlet weak var userIDTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBAction func unwindToLogin(segue:UIStoryboardSegue) {
+        Utils().hideActivityIndicator(uiView: self.view)
+    }
+    
     @IBAction func loginButtonTapped(_ sender: UIButton)
     {
         login()

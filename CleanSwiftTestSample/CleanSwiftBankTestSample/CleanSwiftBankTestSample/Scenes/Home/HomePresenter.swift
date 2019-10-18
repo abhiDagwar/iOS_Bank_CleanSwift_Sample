@@ -14,7 +14,8 @@ import UIKit
 
 protocol HomePresentationLogic
 {
-    func presentSomething(response: Home.Something.Response)
+    func presentUserDetails(response: Home.GetAccountHolderDetails.Response)
+    func presentAccountStatementList(response: Home.GetAccountStatementList.Response)
     func presentLogout()
 }
 
@@ -22,14 +23,56 @@ class HomePresenter: HomePresentationLogic
 {
     weak var viewController: HomeDisplayLogic?
     
-    // MARK: Do something
+    // MARK: Display User Account Info
     
-    func presentSomething(response: Home.Something.Response)
+    func presentUserDetails(response: Home.GetAccountHolderDetails.Response)
     {
-        let viewModel = Home.Something.ViewModel()
-        viewController?.displaySomething(viewModel: viewModel)
+        let user = response.userAccountDetails
+        let viewModel = mapUserToViewModel(user: user)
+        viewController?.displayUserDetails(viewModel: viewModel)
     }
     
+    func mapUserToViewModel(user: UserAccount) -> Home.GetAccountHolderDetails.ViewModel {
+        let accountHolderName = user.name
+        let accountInfo = user.bankAccount + "/" + user.agency
+        let accountBalance = user.balance
+        
+        return Home.GetAccountHolderDetails.ViewModel(name: accountHolderName, bankAccountInfo: accountInfo, balance: accountBalance)
+    }
+    
+    // MARK: Account Statement List
+    
+    func presentAccountStatementList(response: Home.GetAccountStatementList.Response)
+    {
+        if let statementList = response.accountStatement {
+            if !statementList.isEmpty {
+                handlePresentFetchAccountStementList(statementList: statementList)
+            }
+        }
+    }
+    
+    private func handlePresentFetchAccountStementList(statementList: [StatementList])
+    {
+        let accountStatementList = formatAccountStatementList(statementList: statementList)
+        let viewModel = Home.GetAccountStatementList.ViewModel(success: true, statementList: accountStatementList)
+        viewController?.displayAccountStatementList(viewModel: viewModel)
+    }
+    
+    private func formatAccountStatementList(statementList: [StatementList]?) -> [Home.GetAccountStatementList.ViewModel.StatementList]
+    {
+        var accountStatementList: [Home.GetAccountStatementList.ViewModel.StatementList] = []
+        if let statementList = statementList {
+            for statement in statementList {
+                let title = statement.title
+                let desc = statement.desc
+                let date = statement.date
+                let balanceValue = statement.value
+                let accountStatement = Home.GetAccountStatementList.ViewModel.StatementList(title: title, desc: desc, date: date, value: balanceValue)
+                accountStatementList.append(accountStatement)
+            }
+        }
+        return accountStatementList
+    }
     // MARK: Logout
     
     func presentLogout()

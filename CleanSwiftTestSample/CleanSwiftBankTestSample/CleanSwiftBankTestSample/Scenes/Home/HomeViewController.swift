@@ -14,7 +14,8 @@ import UIKit
 
 protocol HomeDisplayLogic: class
 {
-    func displaySomething(viewModel: Home.Something.ViewModel)
+    func displayUserDetails(viewModel: Home.GetAccountHolderDetails.ViewModel)
+    func displayAccountStatementList(viewModel: Home.GetAccountStatementList.ViewModel)
     func displayLogout()
 }
 
@@ -22,6 +23,8 @@ class HomeViewController: UIViewController, HomeDisplayLogic
 {
     var interactor: HomeBusinessLogic?
     var router: (NSObjectProtocol & HomeRoutingLogic & HomeDataPassing)?
+    
+    var acStatementList: [Home.GetAccountStatementList.ViewModel.StatementList] = []
     
     // MARK: Object lifecycle
     
@@ -70,29 +73,57 @@ class HomeViewController: UIViewController, HomeDisplayLogic
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        doSomething()
+        getUserInfo()
+        getAccountStatementList()
     }
     
-    // MARK: Do something
+    // MARK: Display User Account Info
     
-    //@IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var accountHolderName: UILabel!
+    @IBOutlet weak var accountInfo: UILabel!
+    @IBOutlet weak var accountBalance: UILabel!
     
-    func doSomething()
+    func getUserInfo()
     {
-        let request = Home.Something.Request()
-        interactor?.doSomething(request: request)
+        let request = Home.GetAccountHolderDetails.Request()
+        interactor?.getUserDetails(request: request)
     }
     
-    func displaySomething(viewModel: Home.Something.ViewModel)
+    func displayUserDetails(viewModel: Home.GetAccountHolderDetails.ViewModel)
     {
-        //nameTextField.text = viewModel.name
+        accountHolderName.text = viewModel.name
+        accountInfo.text = viewModel.bankAccountInfo
+        accountBalance.text = "\(viewModel.balance)"
+    }
+    
+    // MARK: Account Statement List
+    
+    @IBOutlet weak var userDataTableView: UITableView!
+    
+    struct cellIdentifiers {
+        static let userCell = "userCell"
+    }
+    
+    func getAccountStatementList()
+    {
+        let request = Home.GetAccountStatementList.Request()
+        interactor?.getAccountStatementList(request: request)
+    }
+    
+    func displayAccountStatementList(viewModel: Home.GetAccountStatementList.ViewModel)
+    {
+        if let statementList = viewModel.statementList {
+            acStatementList = statementList
+            userDataTableView.reloadData()
+        }
+        
     }
     
     // MARK: Logout
     
     @IBOutlet weak var logoutButton: UIButton!
     
-    @IBAction func logoutButtonTapped(_ sender: UIButton)
+    @IBAction func logoutButtonTapped(sender: UIButton)
     {
         logout()
     }

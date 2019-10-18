@@ -55,6 +55,6 @@ class TestBankLoginRouter: NSObject, TestBankLoginRoutingLogic, TestBankLoginDat
   
   func passDataToHome(source: TestBankLoginDataStore, destination: inout HomeDataStore)
   {
-    //destination.name = source.name
+    destination.userDetails = source.userDetails
   }
 }

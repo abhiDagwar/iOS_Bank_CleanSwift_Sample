@@ -74,6 +74,18 @@
 		A60A699A235781FB00718DF7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6999235781FB00718DF7 /* Utils.swift */; };
 		A60A699B235781FB00718DF7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6999235781FB00718DF7 /* Utils.swift */; };
 		A60A699C235781FB00718DF7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6999235781FB00718DF7 /* Utils.swift */; };
+		A61F7016235A3000004FE004 /* StatementListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F7015235A3000004FE004 /* StatementListWorker.swift */; };
+		A61F7017235A3000004FE004 /* StatementListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F7015235A3000004FE004 /* StatementListWorker.swift */; };
+		A61F7018235A3000004FE004 /* StatementListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F7015235A3000004FE004 /* StatementListWorker.swift */; };
+		A6B6FA8D23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B6FA8C23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift */; };
+		A6B6FA8E23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B6FA8C23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift */; };
+		A6B6FA8F23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B6FA8C23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift */; };
+		A6E26CD62358EDFD0046356D /* HomeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E26CD52358EDFD0046356D /* HomeViewController+TableView.swift */; };
+		A6E26CD72358EDFD0046356D /* HomeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E26CD52358EDFD0046356D /* HomeViewController+TableView.swift */; };
+		A6E26CD82358EDFD0046356D /* HomeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E26CD52358EDFD0046356D /* HomeViewController+TableView.swift */; };
+		A6E26CDA2358F0DB0046356D /* AccountStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E26CD92358F0DB0046356D /* AccountStatement.swift */; };
+		A6E26CDB2358F0DB0046356D /* AccountStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E26CD92358F0DB0046356D /* AccountStatement.swift */; };
+		A6E26CDC2358F0DB0046356D /* AccountStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E26CD92358F0DB0046356D /* AccountStatement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +139,10 @@
 		A60A695C2357579F00718DF7 /* logout 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logout 2.png"; sourceTree = "<group>"; };
 		A60A695E2357579F00718DF7 /* AuthenticationWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationWorker.swift; sourceTree = "<group>"; };
 		A60A6999235781FB00718DF7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A61F7015235A3000004FE004 /* StatementListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementListWorker.swift; sourceTree = "<group>"; };
+		A6B6FA8C23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountStatementTableViewCell.swift; sourceTree = "<group>"; };
+		A6E26CD52358EDFD0046356D /* HomeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableView.swift"; sourceTree = "<group>"; };
+		A6E26CD92358F0DB0046356D /* AccountStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				A60A69452357579E00718DF7 /* LoginResponse.swift */,
+				A6E26CD92358F0DB0046356D /* AccountStatement.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -248,11 +265,13 @@
 		A60A69472357579E00718DF7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A6B6FA8B23596E900046FA8F /* UI */,
 				A60A69482357579E00718DF7 /* HomeInteractor.swift */,
 				A60A69492357579E00718DF7 /* HomeModels.swift */,
 				A60A694A2357579E00718DF7 /* HomePresenter.swift */,
 				A60A694B2357579E00718DF7 /* HomeRouter.swift */,
 				A60A694C2357579E00718DF7 /* HomeViewController.swift */,
+				A6E26CD52358EDFD0046356D /* HomeViewController+TableView.swift */,
 				A60A694D2357579E00718DF7 /* HomeWorker.swift */,
 			);
 			path = Home;
@@ -309,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				A60A695E2357579F00718DF7 /* AuthenticationWorker.swift */,
+				A61F7015235A3000004FE004 /* StatementListWorker.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -319,6 +339,14 @@
 				A60A6999235781FB00718DF7 /* Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A6B6FA8B23596E900046FA8F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A6B6FA8C23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E26CD62358EDFD0046356D /* HomeViewController+TableView.swift in Sources */,
 				A60A696B2357579F00718DF7 /* HomePresenter.swift in Sources */,
 				A60A697A2357579F00718DF7 /* TestBankLoginModels.swift in Sources */,
 				A60A695F2357579F00718DF7 /* LoginRequest.swift in Sources */,
@@ -470,6 +499,7 @@
 				A60A69652357579F00718DF7 /* HomeInteractor.swift in Sources */,
 				A60A69802357579F00718DF7 /* TestBankLoginRouter.swift in Sources */,
 				A60A69712357579F00718DF7 /* HomeViewController.swift in Sources */,
+				A6B6FA8D23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift in Sources */,
 				A60A69952357579F00718DF7 /* AuthenticationWorker.swift in Sources */,
 				A60A696E2357579F00718DF7 /* HomeRouter.swift in Sources */,
 				A60A69892357579F00718DF7 /* Network.swift in Sources */,
@@ -481,6 +511,8 @@
 				A60A6914235756E900718DF7 /* AppDelegate.swift in Sources */,
 				A60A697D2357579F00718DF7 /* TestBankLoginPresenter.swift in Sources */,
 				A60A698C2357579F00718DF7 /* NetworkRouter.swift in Sources */,
+				A6E26CDA2358F0DB0046356D /* AccountStatement.swift in Sources */,
+				A61F7016235A3000004FE004 /* StatementListWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,13 +520,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E26CDB2358F0DB0046356D /* AccountStatement.swift in Sources */,
 				A60A6929235756EA00718DF7 /* CleanSwiftBankTestSampleTests.swift in Sources */,
 				A60A69752357579F00718DF7 /* HomeWorker.swift in Sources */,
 				A60A698A2357579F00718DF7 /* Network.swift in Sources */,
+				A6E26CD72358EDFD0046356D /* HomeViewController+TableView.swift in Sources */,
 				A60A69692357579F00718DF7 /* HomeModels.swift in Sources */,
 				A60A696F2357579F00718DF7 /* HomeRouter.swift in Sources */,
 				A60A69722357579F00718DF7 /* HomeViewController.swift in Sources */,
 				A60A697B2357579F00718DF7 /* TestBankLoginModels.swift in Sources */,
+				A61F7017235A3000004FE004 /* StatementListWorker.swift in Sources */,
 				A60A69962357579F00718DF7 /* AuthenticationWorker.swift in Sources */,
 				A60A69812357579F00718DF7 /* TestBankLoginRouter.swift in Sources */,
 				A60A69602357579F00718DF7 /* LoginRequest.swift in Sources */,
@@ -502,6 +537,7 @@
 				A60A697E2357579F00718DF7 /* TestBankLoginPresenter.swift in Sources */,
 				A60A696C2357579F00718DF7 /* HomePresenter.swift in Sources */,
 				A60A69632357579F00718DF7 /* LoginResponse.swift in Sources */,
+				A6B6FA8E23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift in Sources */,
 				A60A69872357579F00718DF7 /* TestBankLoginWorker.swift in Sources */,
 				A60A698D2357579F00718DF7 /* NetworkRouter.swift in Sources */,
 				A60A69842357579F00718DF7 /* TestBankLoginViewController.swift in Sources */,
@@ -514,13 +550,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E26CDC2358F0DB0046356D /* AccountStatement.swift in Sources */,
 				A60A6934235756EA00718DF7 /* CleanSwiftBankTestSampleUITests.swift in Sources */,
 				A60A69762357579F00718DF7 /* HomeWorker.swift in Sources */,
 				A60A698B2357579F00718DF7 /* Network.swift in Sources */,
+				A6E26CD82358EDFD0046356D /* HomeViewController+TableView.swift in Sources */,
 				A60A696A2357579F00718DF7 /* HomeModels.swift in Sources */,
 				A60A69702357579F00718DF7 /* HomeRouter.swift in Sources */,
 				A60A69732357579F00718DF7 /* HomeViewController.swift in Sources */,
 				A60A697C2357579F00718DF7 /* TestBankLoginModels.swift in Sources */,
+				A61F7018235A3000004FE004 /* StatementListWorker.swift in Sources */,
 				A60A69972357579F00718DF7 /* AuthenticationWorker.swift in Sources */,
 				A60A69822357579F00718DF7 /* TestBankLoginRouter.swift in Sources */,
 				A60A69612357579F00718DF7 /* LoginRequest.swift in Sources */,
@@ -528,6 +567,7 @@
 				A60A697F2357579F00718DF7 /* TestBankLoginPresenter.swift in Sources */,
 				A60A696D2357579F00718DF7 /* HomePresenter.swift in Sources */,
 				A60A69642357579F00718DF7 /* LoginResponse.swift in Sources */,
+				A6B6FA8F23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift in Sources */,
 				A60A69882357579F00718DF7 /* TestBankLoginWorker.swift in Sources */,
 				A60A698E2357579F00718DF7 /* NetworkRouter.swift in Sources */,
 				A60A69852357579F00718DF7 /* TestBankLoginViewController.swift in Sources */,

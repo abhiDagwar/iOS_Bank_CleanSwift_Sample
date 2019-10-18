@@ -9,9 +9,7 @@
 import Foundation
 
 class AuthenticationWorker
-{
-    let users = ["test_user": "Test@1"]
-    
+{    
     func login(username: String, password: String, completion: @escaping (Bool, LoginResponse?, Error?) -> Void) {
         let body = LoginRequest(username: username, password: password)
         Network.taskForPOSTRequest(url: NetworkRouter.Endpoints.login.url, responseType: LoginResponse.self, body: body) { response, error in
@@ -21,12 +19,6 @@ class AuthenticationWorker
                 completion(false, nil, error)
             }
         }
-    }
-    
-    func login(userID: String?, password: String?) -> Bool
-    {
-        guard let userID = userID, let password = password else { return false }
-        return users[userID] == password
     }
     
     func saveUserID(_ userID: String?)

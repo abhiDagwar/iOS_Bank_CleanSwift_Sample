@@ -13,11 +13,16 @@ class NetworkRouter {
         static let base = "https://bank-app-test.herokuapp.com/api"
         
         case login
+        case statements
         
         var stringValue: String {
             switch self {
             case .login:
                 return Endpoints.base + "/login"
+            case .statements:
+                let authenticationWorker = AuthenticationWorker()
+                let userID = authenticationWorker.getUserID()
+                return Endpoints.base + "/statements/\(userID!)"
             }
         }
         

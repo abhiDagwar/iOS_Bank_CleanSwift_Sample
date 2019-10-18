@@ -10,7 +10,7 @@
 //  see http://clean-swift.com
 //
 
-import UIKit
+import Foundation
 
 enum TestBankLogin
 {
@@ -30,8 +30,8 @@ enum TestBankLogin
     }
     struct ViewModel
     {
-        var success: Bool
-        var loginResponse: LoginResponse
+        let success: Bool
+        let loginResponse: LoginResponse
     }
   }
 }
