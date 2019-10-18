@@ -10,22 +10,50 @@
 //  see http://clean-swift.com
 //
 
-import UIKit
+import Foundation
 
 enum Home
 {
-  // MARK: Use cases
-  
-  enum Something
-  {
-    struct Request
+    // MARK: Use cases
+    
+    enum GetAccountHolderDetails
     {
+        struct Request
+        {
+        }
+        struct Response
+        {
+            var userAccountDetails: UserAccount
+        }
+        struct ViewModel
+        {
+            let name: String
+            let bankAccountInfo: String
+            let balance: Double
+        }
     }
-    struct Response
+    
+    enum GetAccountStatementList
     {
+        struct Request
+        {
+        }
+        struct Response
+        {
+            var success: Bool
+            var accountStatement: [StatementList]?
+        }
+        struct ViewModel
+        {
+            var success: Bool
+            let statementList: [StatementList]?
+            
+            struct StatementList: Codable {
+                let title: String
+                let desc: String
+                let date: String
+                let value: Double
+            }
+        }
     }
-    struct ViewModel
-    {
-    }
-  }
 }

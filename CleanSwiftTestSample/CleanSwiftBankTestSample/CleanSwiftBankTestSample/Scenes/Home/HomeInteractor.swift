@@ -14,30 +14,47 @@ import UIKit
 
 protocol HomeBusinessLogic
 {
-    func doSomething(request: Home.Something.Request)
+    func getUserDetails(request: Home.GetAccountHolderDetails.Request)
+    func getAccountStatementList(request: Home.GetAccountStatementList.Request)
     func logout()
 }
 
 protocol HomeDataStore
 {
     //var name: String { get set }
+    var userDetails: UserAccount! { get set }
 }
 
 class HomeInteractor: HomeBusinessLogic, HomeDataStore
 {
     var presenter: HomePresentationLogic?
     var worker: HomeWorker?
+    var userDetails: UserAccount!
     //var name: String = ""
     
-    // MARK: Do something
+    // MARK: Display User Account Info
     
-    func doSomething(request: Home.Something.Request)
+    func getUserDetails(request: Home.GetAccountHolderDetails.Request)
     {
         worker = HomeWorker()
         worker?.doSomeWork()
         
-        let response = Home.Something.Response()
-        presenter?.presentSomething(response: response)
+        let response = Home.GetAccountHolderDetails.Response(userAccountDetails: userDetails)
+        presenter?.presentUserDetails(response: response)
+    }
+    
+    // MARK: Account Statement List
+    
+    func getAccountStatementList(request: Home.GetAccountStatementList.Request)
+    {
+        let statementListWorker = StatementListWorker()
+        statementListWorker.getStatementList { (success, statementList, error) in
+            
+            if success {
+                let response = Home.GetAccountStatementList.Response(success: success, accountStatement: statementList?.statementList)
+                self.presenter?.presentAccountStatementList(response: response)
+            }
+        }
     }
     
     // MARK: Logout
