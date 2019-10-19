@@ -105,5 +105,5 @@ class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
             userIDTextField.text = nil
             passwordTextField.text = nil
         }
-    }    
+    }
 }

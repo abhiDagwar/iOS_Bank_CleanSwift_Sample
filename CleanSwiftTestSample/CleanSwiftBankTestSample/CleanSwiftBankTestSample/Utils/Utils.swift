@@ -18,6 +18,7 @@ class Utils {
     func showActivityIndicator(uiView: UIView) {
         container.frame = uiView.frame
         container.center = uiView.center
+        container.tag = 100
         container.backgroundColor = UIColorFromHex(rgbValue: 0xffffff, alpha: 0.3)
         
         loadingView.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
@@ -39,7 +40,13 @@ class Utils {
     // Hide activity indicator
     func hideActivityIndicator(uiView: UIView) {
         activityIndicator.stopAnimating()
-        container.removeFromSuperview()
+        print("Start remove sibview")
+        if let viewWithTag = uiView.viewWithTag(100) {
+            viewWithTag.removeFromSuperview()
+        }else{
+            print("No!")
+        }
+        //container.removeFromSuperview()
     }
     
     // Define UIColor from hex value
