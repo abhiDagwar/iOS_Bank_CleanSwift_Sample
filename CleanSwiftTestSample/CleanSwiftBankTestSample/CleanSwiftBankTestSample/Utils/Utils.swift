@@ -40,13 +40,11 @@ class Utils {
     // Hide activity indicator
     func hideActivityIndicator(uiView: UIView) {
         activityIndicator.stopAnimating()
-        print("Start remove sibview")
         if let viewWithTag = uiView.viewWithTag(100) {
             viewWithTag.removeFromSuperview()
         }else{
-            print("No!")
+            print("Loading view not removed!")
         }
-        //container.removeFromSuperview()
     }
     
     // Define UIColor from hex value
