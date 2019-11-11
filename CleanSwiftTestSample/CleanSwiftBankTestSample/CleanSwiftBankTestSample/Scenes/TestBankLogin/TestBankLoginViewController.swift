@@ -75,12 +75,13 @@ class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
     
     @IBOutlet weak var userIDTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var messageLabel: UILabel!
     
     @IBAction func unwindToLogin(segue:UIStoryboardSegue) {
         Utils().hideActivityIndicator(uiView: self.view)
     }
     
-    @IBAction func loginButtonTapped(_ sender: UIButton)
+    @IBAction func loginButtonTapped(_ sender: Any)
     {
         login()
     }
@@ -101,9 +102,11 @@ class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
         
         if viewModel.success {
             performSegue(withIdentifier: "Home", sender: nil)
+            messageLabel.text = "Welcome"
         } else {
             userIDTextField.text = nil
             passwordTextField.text = nil
+            messageLabel.text = "Your email/password didn't match"
         }
     }
 }

@@ -24,6 +24,11 @@ struct ErrorResponse: Codable {
         code = (try container.decodeIfPresent(Int.self, forKey: .code)) ?? -1
         message = (try container.decodeIfPresent(String.self, forKey: .message)) ?? "NA"
     }
+    
+    init(code: Int, message: String) {
+        self.code = code
+        self.message = message
+    }
 }
 
 // MARK: - UserAccount
