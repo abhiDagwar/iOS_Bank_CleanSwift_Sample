@@ -14,7 +14,7 @@ import UIKit
 
 protocol TestBankLoginPresentationLogic
 {
-    func presentLogin(response: TestBankLogin.Login.Response)
+    func presentLogin(response: TestBankLogin.Login.Response?)
 }
 
 class TestBankLoginPresenter: TestBankLoginPresentationLogic
@@ -23,9 +23,11 @@ class TestBankLoginPresenter: TestBankLoginPresentationLogic
     
     // MARK: Login
     
-    func presentLogin(response: TestBankLogin.Login.Response)
+    func presentLogin(response: TestBankLogin.Login.Response?)
     {
-        let viewModel = TestBankLogin.Login.ViewModel(success: response.success, loginResponse: response.loginResponse)
-        viewController?.displayLogin(viewModel: viewModel)
+        if let response = response {
+            let viewModel = TestBankLogin.Login.ViewModel(success: response.success, loginResponse: response.loginResponse)
+            viewController?.displayLogin(viewModel: viewModel)
+        }
     }
 }

@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sbf-D4-tYh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sbf-D4-tYh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-        <array key="HelveticaNeueLights.ttc">
-            <string>HelveticaNeue-Light</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Test Bank Login View Controller-->
         <scene sceneID="8B4-2I-atJ">
@@ -68,15 +60,24 @@
                                                     <action selector="loginButtonTapped:" destination="Sbf-D4-tYh" eventType="touchUpInside" id="uVo-DO-3SU"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaF-3k-xpZ">
+                                                <rect key="frame" x="17" y="517" width="341" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.11641117018143554" blue="0.07716033044641335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="xKU-P7-822" firstAttribute="bottom" secondItem="hcY-0L-LHf" secondAttribute="bottom" constant="33" id="0FK-dk-qnI"/>
                                             <constraint firstItem="xKU-P7-822" firstAttribute="trailing" secondItem="Yy6-68-JsP" secondAttribute="trailing" constant="17" id="Ey5-0m-n0y"/>
+                                            <constraint firstItem="xKU-P7-822" firstAttribute="trailing" secondItem="eaF-3k-xpZ" secondAttribute="trailing" constant="17" id="Kdb-sm-eVm"/>
                                             <constraint firstItem="xKU-P7-822" firstAttribute="trailing" secondItem="hcY-0L-LHf" secondAttribute="trailing" constant="87" id="Lmr-nP-Jq7"/>
+                                            <constraint firstItem="hcY-0L-LHf" firstAttribute="top" secondItem="eaF-3k-xpZ" secondAttribute="bottom" constant="35" id="ULd-Pf-KWk"/>
                                             <constraint firstItem="XgV-0n-SB6" firstAttribute="leading" secondItem="xKU-P7-822" secondAttribute="leading" constant="125" id="Uy2-rp-trz"/>
                                             <constraint firstItem="Yy6-68-JsP" firstAttribute="leading" secondItem="xKU-P7-822" secondAttribute="leading" constant="17" id="WNi-5C-kh4"/>
                                             <constraint firstItem="xKU-P7-822" firstAttribute="trailing" secondItem="XgV-0n-SB6" secondAttribute="trailing" constant="125" id="XSM-b9-ES7"/>
+                                            <constraint firstItem="eaF-3k-xpZ" firstAttribute="leading" secondItem="xKU-P7-822" secondAttribute="leading" constant="17" id="Zad-ip-LJx"/>
                                             <constraint firstItem="XgV-0n-SB6" firstAttribute="top" secondItem="xKU-P7-822" secondAttribute="top" constant="36" id="bUl-80-5x3"/>
                                             <constraint firstItem="Yy6-68-JsP" firstAttribute="top" secondItem="XgV-0n-SB6" secondAttribute="bottom" constant="105" id="tsz-sy-nQH"/>
                                             <constraint firstItem="hcY-0L-LHf" firstAttribute="leading" secondItem="xKU-P7-822" secondAttribute="leading" constant="86" id="uNr-MU-6mW"/>
@@ -104,6 +105,7 @@
                         <viewLayoutGuide key="safeArea" id="Jfn-0w-YWi"/>
                     </view>
                     <connections>
+                        <outlet property="messageLabel" destination="eaF-3k-xpZ" id="7Qi-WK-pOi"/>
                         <outlet property="passwordTextField" destination="tly-0K-8UT" id="sKJ-K9-1Im"/>
                         <outlet property="userIDTextField" destination="8CY-zV-ZPI" id="qE7-3I-N5R"/>
                         <segue destination="BdL-yB-bbD" kind="show" identifier="Home" id="wHy-d1-UaT"/>
@@ -111,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="St6-iS-VlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1087" y="134"/>
+            <point key="canvasLocation" x="1085.5999999999999" y="133.5832083958021"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="m4A-uG-bVy">

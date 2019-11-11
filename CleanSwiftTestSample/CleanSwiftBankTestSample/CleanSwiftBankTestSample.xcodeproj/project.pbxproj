@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BC248FD2372C96A00751AC3 /* TestBankLoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC248FC2372C96A00751AC3 /* TestBankLoginTest.swift */; };
+		1BC248FE2372F3B800751AC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60A6917235756E900718DF7 /* Main.storyboard */; };
 		A60A6914235756E900718DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6913235756E900718DF7 /* AppDelegate.swift */; };
 		A60A6916235756E900718DF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6915235756E900718DF7 /* ViewController.swift */; };
 		A60A6919235756E900718DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60A6917235756E900718DF7 /* Main.storyboard */; };
@@ -106,6 +108,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BC248FC2372C96A00751AC3 /* TestBankLoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBankLoginTest.swift; sourceTree = "<group>"; };
 		A60A6910235756E900718DF7 /* CleanSwiftBankTestSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwiftBankTestSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60A6913235756E900718DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A60A6915235756E900718DF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +173,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BC248F72372C6EA00751AC3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1BC248FB2372C94E00751AC3 /* TestBankLogin */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1BC248FB2372C94E00751AC3 /* TestBankLogin */ = {
+			isa = PBXGroup;
+			children = (
+				1BC248FC2372C96A00751AC3 /* TestBankLoginTest.swift */,
+			);
+			path = TestBankLogin;
+			sourceTree = "<group>";
+		};
 		A60A6907235756E900718DF7 = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +231,7 @@
 		A60A6927235756EA00718DF7 /* CleanSwiftBankTestSampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				1BC248F72372C6EA00751AC3 /* Scenes */,
 				A60A6928235756EA00718DF7 /* CleanSwiftBankTestSampleTests.swift */,
 				A60A692A235756EA00718DF7 /* Info.plist */,
 			);
@@ -468,6 +488,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC248FE2372F3B800751AC3 /* Main.storyboard in Resources */,
 				A60A69902357579F00718DF7 /* Logo.png in Resources */,
 				A60A69932357579F00718DF7 /* logout 2.png in Resources */,
 			);
@@ -535,6 +556,7 @@
 				A60A69602357579F00718DF7 /* LoginRequest.swift in Sources */,
 				A60A69782357579F00718DF7 /* TestBankLoginInteractor.swift in Sources */,
 				A60A697E2357579F00718DF7 /* TestBankLoginPresenter.swift in Sources */,
+				1BC248FD2372C96A00751AC3 /* TestBankLoginTest.swift in Sources */,
 				A60A696C2357579F00718DF7 /* HomePresenter.swift in Sources */,
 				A60A69632357579F00718DF7 /* LoginResponse.swift in Sources */,
 				A6B6FA8E23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift in Sources */,
