@@ -87,16 +87,37 @@ class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
         login()
     }
     
-    func login()
+    private func login()
     {
-        Utils().showActivityIndicator(uiView: self.view)
-        
         let userID = userIDTextField.text
         let password = passwordTextField.text
-        let request = TestBankLogin.Login.Request(userID: userID, password: password)
-        interactor?.login(request: request)
+        
+        if !isLoginTextFieldEmpty(userID, password: password) {
+            Utils().showActivityIndicator(uiView: self.view)
+            let request = TestBankLogin.Login.Request(userID: userID, password: password)
+            interactor?.login(request: request)
+        } else {
+            messageLabel.text = NSLocalizedString("Enter username / password to login", comment: "")
+        }
     }
     
+    private func isLoginTextFieldEmpty(_ userID: String?, password: String?) -> Bool
+    {
+        if let userID = userID, let password = password {
+            if !userID.isEmpty && !password.isEmpty {
+                return false
+            } else {
+                return true
+            }
+        } else {
+            return true
+        }
+    }
+    
+    
+}
+
+extension TestBankLoginViewController {
     func displayLogin(viewModel: TestBankLogin.Login.ViewModel)
     {
         Utils().hideActivityIndicator(uiView: self.view)

@@ -10,7 +10,6 @@
 		1BC248FD2372C96A00751AC3 /* TestBankLoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC248FC2372C96A00751AC3 /* TestBankLoginTest.swift */; };
 		1BC248FE2372F3B800751AC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60A6917235756E900718DF7 /* Main.storyboard */; };
 		A60A6914235756E900718DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6913235756E900718DF7 /* AppDelegate.swift */; };
-		A60A6916235756E900718DF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A6915235756E900718DF7 /* ViewController.swift */; };
 		A60A6919235756E900718DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60A6917235756E900718DF7 /* Main.storyboard */; };
 		A60A691B235756E900718DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60A691A235756E900718DF7 /* Assets.xcassets */; };
 		A60A691E235756E900718DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60A691C235756E900718DF7 /* LaunchScreen.storyboard */; };
@@ -112,7 +111,6 @@
 		1BC248FC2372C96A00751AC3 /* TestBankLoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBankLoginTest.swift; sourceTree = "<group>"; };
 		A60A6910235756E900718DF7 /* CleanSwiftBankTestSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwiftBankTestSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60A6913235756E900718DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A60A6915235756E900718DF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A60A6918235756E900718DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A60A691A235756E900718DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A60A691D235756E900718DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -224,7 +222,6 @@
 				A60A69552357579F00718DF7 /* Service */,
 				A60A695D2357579F00718DF7 /* Shared */,
 				A60A6913235756E900718DF7 /* AppDelegate.swift */,
-				A60A6915235756E900718DF7 /* ViewController.swift */,
 				A60A6917235756E900718DF7 /* Main.storyboard */,
 				A60A691A235756E900718DF7 /* Assets.xcassets */,
 				A60A691C235756E900718DF7 /* LaunchScreen.storyboard */,
@@ -523,7 +520,6 @@
 				A60A697A2357579F00718DF7 /* TestBankLoginModels.swift in Sources */,
 				A60A695F2357579F00718DF7 /* LoginRequest.swift in Sources */,
 				A60A69862357579F00718DF7 /* TestBankLoginWorker.swift in Sources */,
-				A60A6916235756E900718DF7 /* ViewController.swift in Sources */,
 				A60A69622357579F00718DF7 /* LoginResponse.swift in Sources */,
 				A60A69652357579F00718DF7 /* HomeInteractor.swift in Sources */,
 				A60A69802357579F00718DF7 /* TestBankLoginRouter.swift in Sources */,

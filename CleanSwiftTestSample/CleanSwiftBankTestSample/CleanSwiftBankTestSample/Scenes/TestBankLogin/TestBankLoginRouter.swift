@@ -27,22 +27,7 @@ class TestBankLoginRouter: NSObject, TestBankLoginRoutingLogic, TestBankLoginDat
   weak var viewController: TestBankLoginViewController?
   var dataStore: TestBankLoginDataStore?
   
-  // MARK: Routing
-  
-  func routeToHome(segue: UIStoryboardSegue?)
-  {
-    if let segue = segue {
-        let destinationVC = segue.destination as! HomeViewController
-        var destinationDS = destinationVC.router!.dataStore!
-        passDataToHome(source: dataStore!, destination: &destinationDS)
-    } else {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let destinationVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        var destinationDS = destinationVC.router!.dataStore!
-        passDataToHome(source: dataStore!, destination: &destinationDS)
-        navigateToHome(source: viewController!, destination: destinationVC)
-    }
-  }
+    
 
    //MARK: Navigation
   
@@ -57,4 +42,23 @@ class TestBankLoginRouter: NSObject, TestBankLoginRoutingLogic, TestBankLoginDat
   {
     destination.userDetails = source.userDetails
   }
+}
+
+extension TestBankLoginRouter {
+    // MARK: Routing
+    
+    func routeToHome(segue: UIStoryboardSegue?)
+    {
+        if let segue = segue {
+            let destinationVC = segue.destination as! HomeViewController
+            var destinationDS = destinationVC.router!.dataStore!
+            passDataToHome(source: dataStore!, destination: &destinationDS)
+        } else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            var destinationDS = destinationVC.router!.dataStore!
+            passDataToHome(source: dataStore!, destination: &destinationDS)
+            navigateToHome(source: viewController!, destination: destinationVC)
+        }
+    }
 }

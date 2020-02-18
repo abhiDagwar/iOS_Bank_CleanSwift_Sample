@@ -29,6 +29,10 @@ class TestBankLoginInteractor: TestBankLoginBusinessLogic, TestBankLoginDataStor
     var worker: TestBankLoginWorker?
     var userDetails: UserAccount?
     
+    
+}
+
+extension TestBankLoginInteractor {
     // MARK: Login
     
     func login(request: TestBankLogin.Login.Request)
