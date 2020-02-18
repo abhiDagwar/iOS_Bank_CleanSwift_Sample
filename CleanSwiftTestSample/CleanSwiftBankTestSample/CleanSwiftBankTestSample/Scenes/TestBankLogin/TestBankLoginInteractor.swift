@@ -36,14 +36,15 @@ class TestBankLoginInteractor: TestBankLoginBusinessLogic, TestBankLoginDataStor
         let userID = request.userID
         let password = request.password
         let authenticationWorker = AuthenticationWorker()
-        authenticationWorker.login(username: userID!, password: password!) { (success, response, error) in
+        authenticationWorker.login(username: userID ?? "", password: password ?? "") { (success, response, error) in
             if success {
                 authenticationWorker.saveUserID("\(response!.userAccount.userID)")
                 let response = TestBankLogin.Login.Response(success: success, loginResponse: response!)
                 self.userDetails = response.loginResponse.userAccount
                 self.presenter?.presentLogin(response: response)
             } else {
-                self.presenter?.presentLogin(response: nil)
+                let errorResponse = TestBankLogin.Login.Error(success: success, errorResponse: error!)
+                self.presenter?.presentLogin(with: errorResponse)
             }
         }
     }

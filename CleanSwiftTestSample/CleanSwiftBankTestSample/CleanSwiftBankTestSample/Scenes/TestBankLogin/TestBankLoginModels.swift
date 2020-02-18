@@ -28,10 +28,23 @@ enum TestBankLogin
         var success: Bool
         var loginResponse: LoginResponse
     }
+    
+    struct Error
+    {
+        var success: Bool
+        var errorResponse: ErrorResponse
+    }
+    
     struct ViewModel
     {
         let success: Bool
         let loginResponse: LoginResponse
     }
+    
+    struct ErrorModel {
+        let success: Bool
+        let errorResponse: ErrorResponse
+    }
+    
   }
 }

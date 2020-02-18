@@ -9,15 +9,22 @@
 import Foundation
 
 class Network {
-    class func taskForPOSTRequest<RequestType: Encodable, ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, body: RequestType, completion: @escaping (ResponseType?, Error?) -> Void) {
+    class func taskForPOSTRequest<RequestType: Encodable, ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, body: RequestType, completion: @escaping (ResponseType?, ErrorResponse?) -> Void) {
+        
+        var errorRes = ErrorResponse(code: 11, message: "Something went wrong. Please try again later.")
+        
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = try! JSONEncoder().encode(body)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data else {
+                if let error = error {
+                    errorRes = ErrorResponse(code: error._code, message: error.localizedDescription)
+                }
+                
                 DispatchQueue.main.async {
-                    completion(nil, error)
+                    completion(nil, errorRes)
                 }
                 return
             }
@@ -29,13 +36,14 @@ class Network {
                 }
             } catch {
                 do {
-                    let errorResponse = try decoder.decode(ErrorResponse.self, from: data) as! Error
+                    let errorResponse = try decoder.decode(ErrorResponse.self, from: data)
                     DispatchQueue.main.async {
                         completion(nil, errorResponse)
                     }
                 } catch {
+                    errorRes = ErrorResponse(code: error._code, message: error.localizedDescription)
                     DispatchQueue.main.async {
-                        completion(nil, error)
+                        completion(nil, errorRes)
                     }
                 }
             }

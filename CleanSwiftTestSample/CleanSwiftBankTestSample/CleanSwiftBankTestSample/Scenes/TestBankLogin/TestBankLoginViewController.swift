@@ -15,6 +15,7 @@ import UIKit
 protocol TestBankLoginDisplayLogic: class
 {
     func displayLogin(viewModel: TestBankLogin.Login.ViewModel)
+    func displayError(errorModel: TestBankLogin.Login.ErrorModel)
 }
 
 class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
@@ -102,11 +103,19 @@ class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
         
         if viewModel.success {
             performSegue(withIdentifier: "Home", sender: nil)
-            messageLabel.text = "Welcome"
+            messageLabel.text = NSLocalizedString("Welcome", comment: "")
         } else {
             userIDTextField.text = nil
             passwordTextField.text = nil
-            messageLabel.text = "Your email/password didn't match"
+            messageLabel.text = NSLocalizedString("Your email/password didn't match", comment: "")
         }
+    }
+    
+    func displayError(errorModel: TestBankLogin.Login.ErrorModel) {
+        //Handle Error
+        Utils().hideActivityIndicator(uiView: self.view)
+        userIDTextField.text = nil
+        passwordTextField.text = nil
+        messageLabel.text = errorModel.errorResponse.message
     }
 }

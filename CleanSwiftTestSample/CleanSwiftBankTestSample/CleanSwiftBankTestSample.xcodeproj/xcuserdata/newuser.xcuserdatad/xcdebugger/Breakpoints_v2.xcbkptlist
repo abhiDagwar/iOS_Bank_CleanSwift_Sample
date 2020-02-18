@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CleanSwiftBankTestSample/Service/Network/Network.swift"
+            timestampString = "603716172.697323"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "taskForPOSTRequest(url:responseType:body:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CleanSwiftBankTestSample/Service/Network/Network.swift"
+            timestampString = "603716172.697417"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "taskForPOSTRequest(url:responseType:body:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static CleanSwiftBankTestSample.Network.taskForPOSTRequest&lt;A, B where A: Swift.Encodable, B: Swift.Decodable&gt;(url: Foundation.URL, responseType: B.Type, body: A, completion: (Swift.Optional&lt;B&gt;, Swift.Optional&lt;CleanSwiftBankTestSample.ErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CleanSwiftBankTestSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Downloads/iOS_Bank_CleanSwift_Sample-master/CleanSwiftTestSample/CleanSwiftBankTestSample/CleanSwiftBankTestSample/Service/Network/Network.swift"
+                  timestampString = "603716021.8997771"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "671">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static CleanSwiftBankTestSample.Network.taskForPOSTRequest&lt;A, B where A: Swift.Encodable, B: Swift.Decodable&gt;(url: Foundation.URL, responseType: B.Type, body: A, completion: (Swift.Optional&lt;B&gt;, Swift.Optional&lt;CleanSwiftBankTestSample.ErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CleanSwiftBankTestSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Downloads/iOS_Bank_CleanSwift_Sample-master/CleanSwiftTestSample/CleanSwiftBankTestSample/CleanSwiftBankTestSample/Service/Network/Network.swift"
+                  timestampString = "603716021.902388"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "115">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CleanSwiftBankTestSample/Service/Network/Network.swift"
+            timestampString = "603716172.697484"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "taskForPOSTRequest(url:responseType:body:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CleanSwiftBankTestSample/Service/Network/Network.swift"
+            timestampString = "603716172.697543"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "taskForPOSTRequest(url:responseType:body:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static CleanSwiftBankTestSample.Network.taskForPOSTRequest&lt;A, B where A: Swift.Encodable, B: Swift.Decodable&gt;(url: Foundation.URL, responseType: B.Type, body: A, completion: (Swift.Optional&lt;B&gt;, Swift.Optional&lt;CleanSwiftBankTestSample.ErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CleanSwiftBankTestSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Downloads/iOS_Bank_CleanSwift_Sample-master/CleanSwiftTestSample/CleanSwiftBankTestSample/CleanSwiftBankTestSample/Service/Network/Network.swift"
+                  timestampString = "603716021.913618"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "4039">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static CleanSwiftBankTestSample.Network.taskForPOSTRequest&lt;A, B where A: Swift.Encodable, B: Swift.Decodable&gt;(url: Foundation.URL, responseType: B.Type, body: A, completion: (Swift.Optional&lt;B&gt;, Swift.Optional&lt;CleanSwiftBankTestSample.ErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CleanSwiftBankTestSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Downloads/iOS_Bank_CleanSwift_Sample-master/CleanSwiftTestSample/CleanSwiftBankTestSample/CleanSwiftBankTestSample/Service/Network/Network.swift"
+                  timestampString = "603716021.915481"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CleanSwiftBankTestSample/Scenes/TestBankLogin/TestBankLoginViewController.swift"
+            timestampString = "603716172.6976039"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CleanSwiftBankTestSample/Scenes/TestBankLogin/TestBankLoginViewController.swift"
+            timestampString = "603716172.698073"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "displayLogin(viewModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CleanSwiftBankTestSample/Scenes/TestBankLogin/TestBankLoginInteractor.swift"
+            timestampString = "603716172.6983711"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "login(request:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CleanSwiftBankTestSample/Scenes/TestBankLogin/TestBankLoginInteractor.swift"
+            timestampString = "603716172.698431"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "login(request:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
