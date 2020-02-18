@@ -89,12 +89,7 @@ class HomeViewController: UIViewController, HomeDisplayLogic
         interactor?.getUserDetails(request: request)
     }
     
-    func displayUserDetails(viewModel: Home.GetAccountHolderDetails.ViewModel)
-    {
-        accountHolderName.text = viewModel.name
-        accountInfo.text = viewModel.bankAccountInfo
-        accountBalance.text = "\(viewModel.balance)"
-    }
+    
     
     // MARK: Account Statement List
     
@@ -110,15 +105,6 @@ class HomeViewController: UIViewController, HomeDisplayLogic
         interactor?.getAccountStatementList(request: request)
     }
     
-    func displayAccountStatementList(viewModel: Home.GetAccountStatementList.ViewModel)
-    {
-        if let statementList = viewModel.statementList {
-            acStatementList = statementList
-            userDataTableView.reloadData()
-        }
-        
-    }
-    
     // MARK: Logout
     
     @IBOutlet weak var logoutButton: UIButton!
@@ -132,10 +118,27 @@ class HomeViewController: UIViewController, HomeDisplayLogic
     {
         interactor?.logout()
     }
+}
+
+extension HomeViewController {
+    func displayUserDetails(viewModel: Home.GetAccountHolderDetails.ViewModel)
+    {
+        accountHolderName.text = viewModel.name
+        accountInfo.text = viewModel.bankAccountInfo
+        accountBalance.text = "\(viewModel.balance)"
+    }
+    
+    func displayAccountStatementList(viewModel: Home.GetAccountStatementList.ViewModel)
+    {
+        if let statementList = viewModel.statementList {
+            acStatementList = statementList
+            userDataTableView.reloadData()
+        }
+        
+    }
     
     func displayLogout()
     {
         performSegue(withIdentifier: "Login", sender: nil)
     }
-    
 }

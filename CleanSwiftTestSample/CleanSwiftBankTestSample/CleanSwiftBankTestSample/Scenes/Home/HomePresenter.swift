@@ -23,14 +23,7 @@ class HomePresenter: HomePresentationLogic
 {
     weak var viewController: HomeDisplayLogic?
     
-    // MARK: Display User Account Info
     
-    func presentUserDetails(response: Home.GetAccountHolderDetails.Response)
-    {
-        let user = response.userAccountDetails
-        let viewModel = mapUserToViewModel(user: user)
-        viewController?.displayUserDetails(viewModel: viewModel)
-    }
     
     func mapUserToViewModel(user: UserAccount) -> Home.GetAccountHolderDetails.ViewModel {
         let accountHolderName = user.name
@@ -40,16 +33,7 @@ class HomePresenter: HomePresentationLogic
         return Home.GetAccountHolderDetails.ViewModel(name: accountHolderName, bankAccountInfo: accountInfo, balance: accountBalance)
     }
     
-    // MARK: Account Statement List
     
-    func presentAccountStatementList(response: Home.GetAccountStatementList.Response)
-    {
-        if let statementList = response.accountStatement {
-            if !statementList.isEmpty {
-                handlePresentFetchAccountStementList(statementList: statementList)
-            }
-        }
-    }
     
     private func handlePresentFetchAccountStementList(statementList: [StatementList])
     {
@@ -73,11 +57,33 @@ class HomePresenter: HomePresentationLogic
         }
         return accountStatementList
     }
+}
+
+extension HomePresenter {
+    // MARK: Display User Account Info
+    
+    func presentUserDetails(response: Home.GetAccountHolderDetails.Response)
+    {
+        let user = response.userAccountDetails
+        let viewModel = mapUserToViewModel(user: user)
+        viewController?.displayUserDetails(viewModel: viewModel)
+    }
+    
+    // MARK: Account Statement List
+    
+    func presentAccountStatementList(response: Home.GetAccountStatementList.Response)
+    {
+        if let statementList = response.accountStatement {
+            if !statementList.isEmpty {
+                handlePresentFetchAccountStementList(statementList: statementList)
+            }
+        }
+    }
+    
     // MARK: Logout
     
     func presentLogout()
     {
         viewController?.displayLogout()
     }
-    
 }

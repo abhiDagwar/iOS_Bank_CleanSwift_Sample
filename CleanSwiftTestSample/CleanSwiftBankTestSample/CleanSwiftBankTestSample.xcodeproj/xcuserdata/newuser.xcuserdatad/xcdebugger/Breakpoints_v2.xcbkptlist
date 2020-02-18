@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CleanSwiftBankTestSample/Service/Network/Network.swift"
-            timestampString = "603716172.697323"
+            timestampString = "603718557.356988"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CleanSwiftBankTestSample/Service/Network/Network.swift"
-            timestampString = "603716172.697417"
+            timestampString = "603718557.35707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -42,7 +42,7 @@
                   moduleName = "CleanSwiftBankTestSample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/newuser/Downloads/iOS_Bank_CleanSwift_Sample-master/CleanSwiftTestSample/CleanSwiftBankTestSample/CleanSwiftBankTestSample/Service/Network/Network.swift"
-                  timestampString = "603716021.8997771"
+                  timestampString = "603718557.798359"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -57,7 +57,7 @@
                   moduleName = "CleanSwiftBankTestSample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/newuser/Downloads/iOS_Bank_CleanSwift_Sample-master/CleanSwiftTestSample/CleanSwiftBankTestSample/CleanSwiftBankTestSample/Service/Network/Network.swift"
-                  timestampString = "603716021.902388"
+                  timestampString = "603718557.799801"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CleanSwiftBankTestSample/Service/Network/Network.swift"
-            timestampString = "603716172.697484"
+            timestampString = "603718557.357134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CleanSwiftBankTestSample/Service/Network/Network.swift"
-            timestampString = "603716172.697543"
+            timestampString = "603718557.357192"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -106,7 +106,7 @@
                   moduleName = "CleanSwiftBankTestSample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/newuser/Downloads/iOS_Bank_CleanSwift_Sample-master/CleanSwiftTestSample/CleanSwiftBankTestSample/CleanSwiftBankTestSample/Service/Network/Network.swift"
-                  timestampString = "603716021.913618"
+                  timestampString = "603718557.80678"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "45"
@@ -121,7 +121,7 @@
                   moduleName = "CleanSwiftBankTestSample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/newuser/Downloads/iOS_Bank_CleanSwift_Sample-master/CleanSwiftTestSample/CleanSwiftBankTestSample/CleanSwiftBankTestSample/Service/Network/Network.swift"
-                  timestampString = "603716021.915481"
+                  timestampString = "603718557.8085901"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CleanSwiftBankTestSample/Scenes/TestBankLogin/TestBankLoginViewController.swift"
-            timestampString = "603716172.6976039"
+            timestampString = "603718557.357254"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "login()"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,44 +154,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CleanSwiftBankTestSample/Scenes/TestBankLogin/TestBankLoginViewController.swift"
-            timestampString = "603716172.698073"
+            timestampString = "603718557.357479"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "displayLogin(viewModel:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CleanSwiftBankTestSample/Scenes/TestBankLogin/TestBankLoginInteractor.swift"
-            timestampString = "603716172.6983711"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "login(request:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CleanSwiftBankTestSample/Scenes/TestBankLogin/TestBankLoginInteractor.swift"
-            timestampString = "603716172.698431"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "login(request:)"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "login()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

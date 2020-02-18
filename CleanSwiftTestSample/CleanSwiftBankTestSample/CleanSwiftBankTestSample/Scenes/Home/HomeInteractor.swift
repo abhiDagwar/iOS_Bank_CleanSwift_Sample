@@ -31,6 +31,11 @@ class HomeInteractor: HomeBusinessLogic, HomeDataStore
     var worker: HomeWorker?
     var userDetails: UserAccount!
     
+    
+    
+}
+
+extension HomeInteractor {
     // MARK: Display User Account Info
     
     func getUserDetails(request: Home.GetAccountHolderDetails.Request)
@@ -61,5 +66,4 @@ class HomeInteractor: HomeBusinessLogic, HomeDataStore
     func logout() {
         presenter?.presentLogout()
     }
-    
 }

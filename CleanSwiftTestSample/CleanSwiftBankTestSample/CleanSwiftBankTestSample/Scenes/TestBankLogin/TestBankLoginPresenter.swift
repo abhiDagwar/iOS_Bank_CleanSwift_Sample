@@ -22,6 +22,10 @@ class TestBankLoginPresenter: TestBankLoginPresentationLogic
 {
     weak var viewController: TestBankLoginDisplayLogic?
     
+    
+}
+
+extension TestBankLoginPresenter {
     // MARK: Login
     
     func presentLogin(response: TestBankLogin.Login.Response?)
