@@ -10,7 +10,7 @@ import Foundation
 
 class AuthenticationWorker
 {    
-    func login(username: String, password: String, completion: @escaping (Bool, LoginResponse?, Error?) -> Void) {
+    func login(username: String, password: String, completion: @escaping (Bool, LoginResponse?, ErrorResponse?) -> Void) {
         let body = LoginRequest(username: username, password: password)
         Network.taskForPOSTRequest(url: NetworkRouter.Endpoints.login.url, responseType: LoginResponse.self, body: body) { response, error in
             if let response = response {

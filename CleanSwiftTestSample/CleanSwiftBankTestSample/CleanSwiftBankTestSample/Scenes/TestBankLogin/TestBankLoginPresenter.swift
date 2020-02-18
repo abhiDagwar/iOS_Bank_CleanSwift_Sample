@@ -15,6 +15,7 @@ import UIKit
 protocol TestBankLoginPresentationLogic
 {
     func presentLogin(response: TestBankLogin.Login.Response?)
+    func presentLogin(with error: TestBankLogin.Login.Error)
 }
 
 class TestBankLoginPresenter: TestBankLoginPresentationLogic
@@ -28,6 +29,14 @@ class TestBankLoginPresenter: TestBankLoginPresentationLogic
         if let response = response {
             let viewModel = TestBankLogin.Login.ViewModel(success: response.success, loginResponse: response.loginResponse)
             viewController?.displayLogin(viewModel: viewModel)
+        } else {
+            //viewController?.displayError()
         }
+    }
+    
+    func presentLogin(with error: TestBankLogin.Login.Error) {
+        //
+        let errorModel = TestBankLogin.Login.ErrorModel(success: error.success, errorResponse: error.errorResponse)
+        viewController?.displayError(errorModel: errorModel)
     }
 }

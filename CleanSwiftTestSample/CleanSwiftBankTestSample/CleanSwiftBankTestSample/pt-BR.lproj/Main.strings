@@ -1,0 +1,42 @@
+
+/* Class = "UITextField"; placeholder = "User"; ObjectID = "8CY-zV-ZPI"; */
+"8CY-zV-ZPI.placeholder" = "User";
+
+/* Class = "UITextField"; text = "test_user"; ObjectID = "8CY-zV-ZPI"; */
+"8CY-zV-ZPI.text" = "test_user";
+
+/* Class = "UILabel"; text = "Conta de luz"; ObjectID = "8bI-5B-7pr"; */
+"8bI-5B-7pr.text" = "Conta de luz";
+
+/* Class = "UILabel"; text = "Jose da Silva Teste"; ObjectID = "DyF-Jd-ATh"; */
+"DyF-Jd-ATh.text" = "Jose da Silva Teste";
+
+/* Class = "UILabel"; text = "Conta"; ObjectID = "Mii-WE-8Yb"; */
+"Mii-WE-8Yb.text" = "Conta";
+
+/* Class = "UILabel"; text = "R$1.000,00"; ObjectID = "Ujv-5B-Ycw"; */
+"Ujv-5B-Ycw.text" = "R$1.000,00";
+
+/* Class = "UILabel"; text = "12/12/2018"; ObjectID = "bpE-Bh-HFX"; */
+"bpE-Bh-HFX.text" = "12/12/2018";
+
+/* Class = "UILabel"; text = "R$1.000,00"; ObjectID = "diE-bV-jiJ"; */
+"diE-bV-jiJ.text" = "R$1.000,00";
+
+/* Class = "UILabel"; text = "2050 / 01.111222-4"; ObjectID = "eW0-zC-AK4"; */
+"eW0-zC-AK4.text" = "2050 / 01.111222-4";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "hcY-0L-LHf"; */
+"hcY-0L-LHf.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "Pagamento"; ObjectID = "iuV-FA-9I6"; */
+"iuV-FA-9I6.text" = "Pagamento";
+
+/* Class = "UILabel"; text = "Saldo"; ObjectID = "jCn-mV-vdO"; */
+"jCn-mV-vdO.text" = "Saldo";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "tly-0K-8UT"; */
+"tly-0K-8UT.placeholder" = "Password";
+
+/* Class = "UITextField"; text = "Test@1"; ObjectID = "tly-0K-8UT"; */
+"tly-0K-8UT.text" = "Test@1";

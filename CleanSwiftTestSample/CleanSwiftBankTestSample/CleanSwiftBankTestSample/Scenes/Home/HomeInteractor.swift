@@ -30,7 +30,6 @@ class HomeInteractor: HomeBusinessLogic, HomeDataStore
     var presenter: HomePresentationLogic?
     var worker: HomeWorker?
     var userDetails: UserAccount!
-    //var name: String = ""
     
     // MARK: Display User Account Info
     
