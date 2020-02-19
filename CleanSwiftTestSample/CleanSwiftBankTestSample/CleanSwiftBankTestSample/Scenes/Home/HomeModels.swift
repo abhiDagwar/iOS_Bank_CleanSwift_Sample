@@ -55,6 +55,11 @@ enum Home
             var success: Bool
             var accountStatement: [StatementList]?
         }
+        struct Error
+        {
+            var success: Bool
+            var errorResponse: ErrorResponse
+        }
         struct ViewModel
         {
             var success: Bool
@@ -66,6 +71,10 @@ enum Home
                 let date: String
                 let value: Double
             }
+        }
+        struct ErrorModel {
+            let success: Bool
+            let errorResponse: ErrorResponse
         }
     }
 }

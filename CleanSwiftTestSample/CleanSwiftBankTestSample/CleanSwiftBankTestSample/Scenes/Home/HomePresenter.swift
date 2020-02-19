@@ -16,6 +16,7 @@ protocol HomePresentationLogic
 {
     func presentUserDetails(response: Home.GetAccountHolderDetails.Response)
     func presentAccountStatementList(response: Home.GetAccountStatementList.Response)
+    func presentAccountStatementList(with error: Home.GetAccountStatementList.Error)
     func presentLogout()
 }
 
@@ -97,6 +98,11 @@ extension HomePresenter {
                 handlePresentFetchAccountStementList(statementList: statementList)
             }
         }
+    }
+    
+    func presentAccountStatementList(with error: Home.GetAccountStatementList.Error) {
+        let errorModel = Home.GetAccountStatementList.ErrorModel(success: error.success, errorResponse: error.errorResponse)
+        viewController?.displayError(errorModel: errorModel)
     }
     
     // MARK: Logout

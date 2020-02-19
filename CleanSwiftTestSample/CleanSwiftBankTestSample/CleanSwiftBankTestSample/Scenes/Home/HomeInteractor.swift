@@ -71,6 +71,13 @@ extension HomeInteractor {
             if success {
                 let response = Home.GetAccountStatementList.Response(success: success, accountStatement: statementList?.statementList)
                 self.presenter?.presentAccountStatementList(response: response)
+            }  else {
+                
+                guard let error = error else {
+                    return
+                }
+                let errorResponse = Home.GetAccountStatementList.Error(success: success, errorResponse: error)
+                self.presenter?.presentAccountStatementList(with: errorResponse)
             }
         }
     }

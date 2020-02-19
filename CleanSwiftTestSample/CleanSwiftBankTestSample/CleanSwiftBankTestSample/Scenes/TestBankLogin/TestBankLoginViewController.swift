@@ -140,5 +140,6 @@ extension TestBankLoginViewController {
         userIDTextField.text = nil
         passwordTextField.text = nil
         messageLabel.text = errorModel.errorResponse.message
+        self.alert(message: errorModel.errorResponse.message, title: "Error")
     }
 }
