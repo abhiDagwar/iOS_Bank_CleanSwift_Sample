@@ -22,7 +22,7 @@ class NetworkRouter {
             case .statements:
                 let authenticationWorker = AuthenticationWorker()
                 let userID = authenticationWorker.getUserID()
-                return Endpoints.base + "/statements/\(userID!)"
+                return Endpoints.base + "/statements/\(userID ?? "")"
             }
         }
         

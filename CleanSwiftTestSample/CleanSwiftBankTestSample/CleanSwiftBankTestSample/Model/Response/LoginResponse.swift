@@ -8,7 +8,15 @@
 
 import Foundation
 
-// MARK: - Login
+/**
+ This file will parse the login response get from login API.
+ 
+ - Parameters:
+    - userAccount: Get the user details after successful login
+    - error: Get the error response if login is invalid or not successful.
+ */
+
+// MARK: - Login Response
 struct LoginResponse: Codable {
     let userAccount: UserAccount
     let error: ErrorResponse

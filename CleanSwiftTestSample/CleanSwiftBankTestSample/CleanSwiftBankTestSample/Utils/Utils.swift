@@ -9,12 +9,27 @@
 import Foundation
 import UIKit
 
+/**
+ This file is use to call custom loading view when you have shows time consuming processeses like networking call.
+ 
+ - Parameters:
+    - container: It is a view which block the user interface to interact
+    - loadingView: Loading view is a small square view which shows top of a view
+    - activityIndicator: It is use to show loading indicator
+ */
+
 class Utils {
     var container: UIView = UIView()
     var loadingView: UIView = UIView()
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
 
-    // Show customized activity indicator
+    /**
+     Call this function to show customized activity indicator
+     
+     - Parameters:
+     - uiView: It is a view on top of this activity indicator will display
+     */
+    
     func showActivityIndicator(uiView: UIView) {
         container.frame = uiView.frame
         container.center = uiView.center
@@ -37,7 +52,13 @@ class Utils {
         activityIndicator.startAnimating()
     }
     
-    // Hide activity indicator
+    /**
+     Call this function to hide customized activity indicator
+     
+     - Parameters:
+     - uiView: Specify the view on which activity indicator is displaying.
+     */
+    
     func hideActivityIndicator(uiView: UIView) {
         activityIndicator.stopAnimating()
         if let viewWithTag = uiView.viewWithTag(100) {
