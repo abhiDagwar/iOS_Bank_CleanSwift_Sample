@@ -110,4 +110,38 @@ class TestBankLoginTest: XCTestCase {
         // Then
         XCTAssertEqual(sut.messageLabel.text, "Your email/password didn't match", "loginButtonTapped(_:) should display an error")
     }
+    
+    func testDisplayUserIDEmpty()
+    {
+        // Given
+        let userID = ""
+        let password = "Test"
+        
+        // When
+        loadView()
+        let isUsernameEmpty = sut.isLoginTextFieldEmpty(userID, password: password)
+        
+        // Then
+        if isUsernameEmpty {
+            XCTAssertEqual(sut.messageLabel.text, "Enter userID to login.", "loginButtonTapped(_:) should display an error")
+
+        }
+    }
+    
+    func testDisplayPasswordEmpty()
+    {
+        // Given
+        let userID = ""
+        let password = "Test"
+        
+        // When
+        loadView()
+        let isPasswordEmpty = sut.isLoginTextFieldEmpty(userID, password: password)
+        
+        // Then
+        if isPasswordEmpty {
+            XCTAssertEqual(sut.messageLabel.text, "Enter password to login.", "loginButtonTapped(_:) should display an error")
+            
+        }
+    }
 }

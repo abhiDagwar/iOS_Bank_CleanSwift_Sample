@@ -103,7 +103,7 @@ class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
         }
     }
     
-    private func isLoginTextFieldEmpty(_ userID: String?, password: String?) -> Bool
+    func isLoginTextFieldEmpty(_ userID: String?, password: String?) -> Bool
     {
         if let userID = userID, let password = password {
             if !userID.isEmpty && !password.isEmpty {
