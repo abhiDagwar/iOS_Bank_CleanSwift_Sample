@@ -64,7 +64,6 @@ class HomeViewController: UIViewController, HomeDisplayLogic
     }
     
     // MARK: Routing
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if let scene = segue.identifier {
@@ -76,7 +75,6 @@ class HomeViewController: UIViewController, HomeDisplayLogic
     }
     
     // MARK: View lifecycle
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -85,7 +83,6 @@ class HomeViewController: UIViewController, HomeDisplayLogic
     }
     
     // MARK: Display User Account Info
-    
     @IBOutlet weak var accountHolderName: UILabel!
     @IBOutlet weak var accountInfo: UILabel!
     @IBOutlet weak var accountBalance: UILabel!
@@ -96,10 +93,7 @@ class HomeViewController: UIViewController, HomeDisplayLogic
         interactor?.getUserDetails(request: request)
     }
     
-    
-    
     // MARK: Account Statement List
-    
     @IBOutlet weak var userDataTableView: UITableView!
     
     struct cellIdentifiers {
@@ -128,6 +122,12 @@ class HomeViewController: UIViewController, HomeDisplayLogic
 }
 
 extension HomeViewController {
+    /**
+     This function display user account information to the top of the table.
+     
+     - Parameters:
+        - viewModel: mapped user details will display on the top of the table.
+     */
     func displayUserDetails(viewModel: Home.GetAccountHolderDetails.ViewModel)
     {
         accountHolderName.text = viewModel.name
@@ -135,6 +135,12 @@ extension HomeViewController {
         accountBalance.text = "\(viewModel.balance)"
     }
     
+    /**
+     This function display user account statement list to the tableview.
+     
+     - Parameters:
+        - viewModel: mapped user statement list will display on the top of the table.
+     */
     func displayAccountStatementList(viewModel: Home.GetAccountStatementList.ViewModel)
     {
         if let statementList = viewModel.statementList {
@@ -144,6 +150,9 @@ extension HomeViewController {
         
     }
     
+    /**
+     This function perform the logout to the login view.
+     */
     func displayLogout()
     {
         performSegue(withIdentifier: "Login", sender: nil)

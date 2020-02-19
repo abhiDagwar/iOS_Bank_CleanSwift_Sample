@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+ This class creates the network API request endpoints.
+ */
 class NetworkRouter {
     enum Endpoints {
         static let base = "https://bank-app-test.herokuapp.com/api"

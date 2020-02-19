@@ -23,6 +23,16 @@ protocol TestBankLoginDataStore
     var userDetails: UserAccount? { get }
 }
 
+/**
+ This class acts as a mediator between the Worker (AuthenticationWorker) and the Presenter. It communicates with the ViewController which passes all the Request params needed for the Worker. Before proceeding to the Worker, a validation is done to check if everything is sent properly. The Worker returns a response and the Interactor passes that response towards the Presenter.
+ 
+ The Interactor contains two types of protocols:
+ - **Business Logic Protocol**: declare all the Interactor methods in this protocol, so they can be available for use in the ViewController.
+ - **Data Store Protocol**: all properties that should keep their current state are declared here. This protocol is mainly used in the Router to pass data between controllers.
+ 
+ Usage:
+ - The viewController send the user request to fetch valid login user details.
+ */
 class TestBankLoginInteractor: TestBankLoginBusinessLogic, TestBankLoginDataStore
 {
     var presenter: TestBankLoginPresentationLogic?
@@ -55,7 +65,6 @@ extension TestBankLoginInteractor {
                 guard let error = error else {
                     return
                 }
-                
                 let errorResponse = TestBankLogin.Login.Error(success: success, errorResponse: error)
                 self.presenter?.presentLogin(with: errorResponse)
             }

@@ -12,10 +12,19 @@
 
 import Foundation
 
+/**
+ This class store all the models related to the controller. The Models class will be related to each component. It will be of type struct and mostly it will contain Request, Response, and ViewModel structs.
+ 
+ Usage:
+ - **Request** - Parameters that need to be sent to the API request.
+ - **Response** - Intercepts the response from the API and stores the appropriate data.
+ - **ViewModel** - Everything that you need to show to the UI is stored here.
+ */
 enum TestBankLogin
 {
-  // MARK: Use cases
-  
+    /**
+     This `enum` bind request of the login authetication information to call the network API and fetch response from the network API will bind in the viewModel to display in the UI.
+     */
   enum Login
   {
     struct Request
