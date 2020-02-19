@@ -30,15 +30,9 @@
 		A60A696B2357579F00718DF7 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694A2357579E00718DF7 /* HomePresenter.swift */; };
 		A60A696C2357579F00718DF7 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694A2357579E00718DF7 /* HomePresenter.swift */; };
 		A60A696D2357579F00718DF7 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694A2357579E00718DF7 /* HomePresenter.swift */; };
-		A60A696E2357579F00718DF7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694B2357579E00718DF7 /* HomeRouter.swift */; };
-		A60A696F2357579F00718DF7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694B2357579E00718DF7 /* HomeRouter.swift */; };
-		A60A69702357579F00718DF7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694B2357579E00718DF7 /* HomeRouter.swift */; };
 		A60A69712357579F00718DF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694C2357579E00718DF7 /* HomeViewController.swift */; };
 		A60A69722357579F00718DF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694C2357579E00718DF7 /* HomeViewController.swift */; };
 		A60A69732357579F00718DF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694C2357579E00718DF7 /* HomeViewController.swift */; };
-		A60A69742357579F00718DF7 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694D2357579E00718DF7 /* HomeWorker.swift */; };
-		A60A69752357579F00718DF7 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694D2357579E00718DF7 /* HomeWorker.swift */; };
-		A60A69762357579F00718DF7 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694D2357579E00718DF7 /* HomeWorker.swift */; };
 		A60A69772357579F00718DF7 /* TestBankLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694F2357579E00718DF7 /* TestBankLoginInteractor.swift */; };
 		A60A69782357579F00718DF7 /* TestBankLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694F2357579E00718DF7 /* TestBankLoginInteractor.swift */; };
 		A60A69792357579F00718DF7 /* TestBankLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A694F2357579E00718DF7 /* TestBankLoginInteractor.swift */; };
@@ -54,9 +48,6 @@
 		A60A69832357579F00718DF7 /* TestBankLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69532357579E00718DF7 /* TestBankLoginViewController.swift */; };
 		A60A69842357579F00718DF7 /* TestBankLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69532357579E00718DF7 /* TestBankLoginViewController.swift */; };
 		A60A69852357579F00718DF7 /* TestBankLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69532357579E00718DF7 /* TestBankLoginViewController.swift */; };
-		A60A69862357579F00718DF7 /* TestBankLoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69542357579E00718DF7 /* TestBankLoginWorker.swift */; };
-		A60A69872357579F00718DF7 /* TestBankLoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69542357579E00718DF7 /* TestBankLoginWorker.swift */; };
-		A60A69882357579F00718DF7 /* TestBankLoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69542357579E00718DF7 /* TestBankLoginWorker.swift */; };
 		A60A69892357579F00718DF7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69572357579F00718DF7 /* Network.swift */; };
 		A60A698A2357579F00718DF7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69572357579F00718DF7 /* Network.swift */; };
 		A60A698B2357579F00718DF7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60A69572357579F00718DF7 /* Network.swift */; };
@@ -78,6 +69,7 @@
 		A61F7016235A3000004FE004 /* StatementListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F7015235A3000004FE004 /* StatementListWorker.swift */; };
 		A61F7017235A3000004FE004 /* StatementListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F7015235A3000004FE004 /* StatementListWorker.swift */; };
 		A61F7018235A3000004FE004 /* StatementListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F7015235A3000004FE004 /* StatementListWorker.swift */; };
+		A63D757F23FD0D0000B2FDCC /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5E5923FC83B600729AB9 /* HomeRouter.swift */; };
 		A6B6FA8D23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B6FA8C23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift */; };
 		A6B6FA8E23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B6FA8C23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift */; };
 		A6B6FA8F23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B6FA8C23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift */; };
@@ -87,6 +79,8 @@
 		A6E26CDA2358F0DB0046356D /* AccountStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E26CD92358F0DB0046356D /* AccountStatement.swift */; };
 		A6E26CDB2358F0DB0046356D /* AccountStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E26CD92358F0DB0046356D /* AccountStatement.swift */; };
 		A6E26CDC2358F0DB0046356D /* AccountStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E26CD92358F0DB0046356D /* AccountStatement.swift */; };
+		A6FC5E5A23FC83B600729AB9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5E5923FC83B600729AB9 /* HomeRouter.swift */; };
+		A6FC5E5D23FC89BE00729AB9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5E5923FC83B600729AB9 /* HomeRouter.swift */; };
 		B29EB7F923FBE49800AF0F9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B29EB7FB23FBE49800AF0F9D /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -126,15 +120,12 @@
 		A60A69482357579E00718DF7 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		A60A69492357579E00718DF7 /* HomeModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
 		A60A694A2357579E00718DF7 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		A60A694B2357579E00718DF7 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		A60A694C2357579E00718DF7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		A60A694D2357579E00718DF7 /* HomeWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
 		A60A694F2357579E00718DF7 /* TestBankLoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBankLoginInteractor.swift; sourceTree = "<group>"; };
 		A60A69502357579E00718DF7 /* TestBankLoginModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBankLoginModels.swift; sourceTree = "<group>"; };
 		A60A69512357579E00718DF7 /* TestBankLoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBankLoginPresenter.swift; sourceTree = "<group>"; };
 		A60A69522357579E00718DF7 /* TestBankLoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBankLoginRouter.swift; sourceTree = "<group>"; };
 		A60A69532357579E00718DF7 /* TestBankLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBankLoginViewController.swift; sourceTree = "<group>"; };
-		A60A69542357579E00718DF7 /* TestBankLoginWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBankLoginWorker.swift; sourceTree = "<group>"; };
 		A60A69572357579F00718DF7 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		A60A69592357579F00718DF7 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		A60A695B2357579F00718DF7 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
@@ -145,6 +136,7 @@
 		A6B6FA8C23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountStatementTableViewCell.swift; sourceTree = "<group>"; };
 		A6E26CD52358EDFD0046356D /* HomeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableView.swift"; sourceTree = "<group>"; };
 		A6E26CD92358F0DB0046356D /* AccountStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatement.swift; sourceTree = "<group>"; };
+		A6FC5E5923FC83B600729AB9 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		B29EB7F323FBE1EF00AF0F9D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		B29EB7F423FBE1EF00AF0F9D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		B29EB7FA23FBE49800AF0F9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -215,18 +207,16 @@
 		A60A6912235756E900718DF7 /* CleanSwiftBankTestSample */ = {
 			isa = PBXGroup;
 			children = (
+				A6FC5E5B23FC867500729AB9 /* Localisation */,
 				A60A6998235781BA00718DF7 /* Utils */,
 				A60A69412357579E00718DF7 /* Model */,
-				A60A695A2357579F00718DF7 /* Resources */,
 				A60A69462357579E00718DF7 /* Scenes */,
 				A60A69552357579F00718DF7 /* Service */,
 				A60A695D2357579F00718DF7 /* Shared */,
+				A60A695A2357579F00718DF7 /* Resources */,
 				A60A6913235756E900718DF7 /* AppDelegate.swift */,
 				A60A6917235756E900718DF7 /* Main.storyboard */,
-				A60A691A235756E900718DF7 /* Assets.xcassets */,
-				A60A691C235756E900718DF7 /* LaunchScreen.storyboard */,
 				A60A691F235756E900718DF7 /* Info.plist */,
-				B29EB7FB23FBE49800AF0F9D /* Localizable.strings */,
 			);
 			path = CleanSwiftBankTestSample;
 			sourceTree = "<group>";
@@ -292,10 +282,9 @@
 				A60A69482357579E00718DF7 /* HomeInteractor.swift */,
 				A60A69492357579E00718DF7 /* HomeModels.swift */,
 				A60A694A2357579E00718DF7 /* HomePresenter.swift */,
-				A60A694B2357579E00718DF7 /* HomeRouter.swift */,
+				A6FC5E5923FC83B600729AB9 /* HomeRouter.swift */,
 				A60A694C2357579E00718DF7 /* HomeViewController.swift */,
 				A6E26CD52358EDFD0046356D /* HomeViewController+TableView.swift */,
-				A60A694D2357579E00718DF7 /* HomeWorker.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -308,7 +297,6 @@
 				A60A69512357579E00718DF7 /* TestBankLoginPresenter.swift */,
 				A60A69522357579E00718DF7 /* TestBankLoginRouter.swift */,
 				A60A69532357579E00718DF7 /* TestBankLoginViewController.swift */,
-				A60A69542357579E00718DF7 /* TestBankLoginWorker.swift */,
 			);
 			path = TestBankLogin;
 			sourceTree = "<group>";
@@ -341,6 +329,8 @@
 		A60A695A2357579F00718DF7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A60A691A235756E900718DF7 /* Assets.xcassets */,
+				A60A691C235756E900718DF7 /* LaunchScreen.storyboard */,
 				A60A695B2357579F00718DF7 /* Logo.png */,
 				A60A695C2357579F00718DF7 /* logout 2.png */,
 			);
@@ -370,6 +360,14 @@
 				A6B6FA8C23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		A6FC5E5B23FC867500729AB9 /* Localisation */ = {
+			isa = PBXGroup;
+			children = (
+				B29EB7FB23FBE49800AF0F9D /* Localizable.strings */,
+			);
+			path = Localisation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,18 +517,16 @@
 				A60A696B2357579F00718DF7 /* HomePresenter.swift in Sources */,
 				A60A697A2357579F00718DF7 /* TestBankLoginModels.swift in Sources */,
 				A60A695F2357579F00718DF7 /* LoginRequest.swift in Sources */,
-				A60A69862357579F00718DF7 /* TestBankLoginWorker.swift in Sources */,
 				A60A69622357579F00718DF7 /* LoginResponse.swift in Sources */,
 				A60A69652357579F00718DF7 /* HomeInteractor.swift in Sources */,
 				A60A69802357579F00718DF7 /* TestBankLoginRouter.swift in Sources */,
 				A60A69712357579F00718DF7 /* HomeViewController.swift in Sources */,
 				A6B6FA8D23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift in Sources */,
 				A60A69952357579F00718DF7 /* AuthenticationWorker.swift in Sources */,
-				A60A696E2357579F00718DF7 /* HomeRouter.swift in Sources */,
+				A6FC5E5A23FC83B600729AB9 /* HomeRouter.swift in Sources */,
 				A60A69892357579F00718DF7 /* Network.swift in Sources */,
 				A60A69832357579F00718DF7 /* TestBankLoginViewController.swift in Sources */,
 				A60A69682357579F00718DF7 /* HomeModels.swift in Sources */,
-				A60A69742357579F00718DF7 /* HomeWorker.swift in Sources */,
 				A60A699A235781FB00718DF7 /* Utils.swift in Sources */,
 				A60A69772357579F00718DF7 /* TestBankLoginInteractor.swift in Sources */,
 				A60A6914235756E900718DF7 /* AppDelegate.swift in Sources */,
@@ -547,24 +543,22 @@
 			files = (
 				A6E26CDB2358F0DB0046356D /* AccountStatement.swift in Sources */,
 				A60A6929235756EA00718DF7 /* CleanSwiftBankTestSampleTests.swift in Sources */,
-				A60A69752357579F00718DF7 /* HomeWorker.swift in Sources */,
 				A60A698A2357579F00718DF7 /* Network.swift in Sources */,
 				A6E26CD72358EDFD0046356D /* HomeViewController+TableView.swift in Sources */,
 				A60A69692357579F00718DF7 /* HomeModels.swift in Sources */,
-				A60A696F2357579F00718DF7 /* HomeRouter.swift in Sources */,
 				A60A69722357579F00718DF7 /* HomeViewController.swift in Sources */,
 				A60A697B2357579F00718DF7 /* TestBankLoginModels.swift in Sources */,
 				A61F7017235A3000004FE004 /* StatementListWorker.swift in Sources */,
 				A60A69962357579F00718DF7 /* AuthenticationWorker.swift in Sources */,
 				A60A69812357579F00718DF7 /* TestBankLoginRouter.swift in Sources */,
 				A60A69602357579F00718DF7 /* LoginRequest.swift in Sources */,
+				A63D757F23FD0D0000B2FDCC /* HomeRouter.swift in Sources */,
 				A60A69782357579F00718DF7 /* TestBankLoginInteractor.swift in Sources */,
 				A60A697E2357579F00718DF7 /* TestBankLoginPresenter.swift in Sources */,
 				1BC248FD2372C96A00751AC3 /* TestBankLoginTest.swift in Sources */,
 				A60A696C2357579F00718DF7 /* HomePresenter.swift in Sources */,
 				A60A69632357579F00718DF7 /* LoginResponse.swift in Sources */,
 				A6B6FA8E23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift in Sources */,
-				A60A69872357579F00718DF7 /* TestBankLoginWorker.swift in Sources */,
 				A60A698D2357579F00718DF7 /* NetworkRouter.swift in Sources */,
 				A60A69842357579F00718DF7 /* TestBankLoginViewController.swift in Sources */,
 				A60A699B235781FB00718DF7 /* Utils.swift in Sources */,
@@ -578,11 +572,9 @@
 			files = (
 				A6E26CDC2358F0DB0046356D /* AccountStatement.swift in Sources */,
 				A60A6934235756EA00718DF7 /* CleanSwiftBankTestSampleUITests.swift in Sources */,
-				A60A69762357579F00718DF7 /* HomeWorker.swift in Sources */,
 				A60A698B2357579F00718DF7 /* Network.swift in Sources */,
 				A6E26CD82358EDFD0046356D /* HomeViewController+TableView.swift in Sources */,
 				A60A696A2357579F00718DF7 /* HomeModels.swift in Sources */,
-				A60A69702357579F00718DF7 /* HomeRouter.swift in Sources */,
 				A60A69732357579F00718DF7 /* HomeViewController.swift in Sources */,
 				A60A697C2357579F00718DF7 /* TestBankLoginModels.swift in Sources */,
 				A61F7018235A3000004FE004 /* StatementListWorker.swift in Sources */,
@@ -594,11 +586,11 @@
 				A60A696D2357579F00718DF7 /* HomePresenter.swift in Sources */,
 				A60A69642357579F00718DF7 /* LoginResponse.swift in Sources */,
 				A6B6FA8F23596ECC0046FA8F /* UserAccountStatementTableViewCell.swift in Sources */,
-				A60A69882357579F00718DF7 /* TestBankLoginWorker.swift in Sources */,
 				A60A698E2357579F00718DF7 /* NetworkRouter.swift in Sources */,
 				A60A69852357579F00718DF7 /* TestBankLoginViewController.swift in Sources */,
 				A60A699C235781FB00718DF7 /* Utils.swift in Sources */,
 				A60A69672357579F00718DF7 /* HomeInteractor.swift in Sources */,
+				A6FC5E5D23FC89BE00729AB9 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

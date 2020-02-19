@@ -9,7 +9,7 @@
 import Foundation
 
 class StatementListWorker {
-    func getStatementList(completion: @escaping (Bool, AccountStatement?, Error?) -> Void)
+    func getStatementList(completion: @escaping (Bool, AccountStatement?, ErrorResponse?) -> Void)
     {
         _ = Network.taskForGETRequest(url: NetworkRouter.Endpoints.statements.url, responseType: AccountStatement.self) { (statementList, error) in
             if let statementList = statementList {

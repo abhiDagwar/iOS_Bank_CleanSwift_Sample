@@ -19,10 +19,17 @@ protocol HomeDisplayLogic: class
     func displayLogout()
 }
 
+/**
+ This class communicate with the Interactor, and get a response back from the Presenter. Also, when there is a need for transition, it will communicate with the Router.
+ 
+ Usage:
+    - **User Details** - Display user details to the UI.
+    - **Statement List** - Display user account statement list to the UI.
+ */
 class HomeViewController: UIViewController, HomeDisplayLogic
 {
     var interactor: HomeBusinessLogic?
-    var router: (NSObjectProtocol & HomeRoutingLogic & HomeDataPassing)?
+    var router: (NSObjectProtocol & HomeDataPassing)?
     
     var acStatementList: [Home.GetAccountStatementList.ViewModel.StatementList] = []
     

@@ -11,7 +11,7 @@ import Foundation
 class Network {
     class func taskForPOSTRequest<RequestType: Encodable, ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, body: RequestType, completion: @escaping (ResponseType?, ErrorResponse?) -> Void) {
         
-        var errorRes = ErrorResponse(code: 11, message: "Something went wrong. Please try again later.")
+        var errorRes = ErrorResponse(code: 11, message: NSLocalizedString("Something went wrong. Please try again later.", comment: ""))
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -51,11 +51,18 @@ class Network {
         task.resume()
     }
     
-    class func taskForGETRequest<ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, completion: @escaping (ResponseType?, Error?) -> Void) -> URLSessionDataTask {
+    class func taskForGETRequest<ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, completion: @escaping (ResponseType?, ErrorResponse?) -> Void) -> URLSessionDataTask {
+        var errorRes = ErrorResponse(code: 11, message: NSLocalizedString("Something went wrong. Please try again later.", comment: ""))
+
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else {
+                
+                if let error = error {
+                    errorRes = ErrorResponse(code: error._code, message: error.localizedDescription)
+                }
+                
                 DispatchQueue.main.async {
-                    completion(nil, error)
+                    completion(nil, errorRes)
                 }
                 return
             }
@@ -67,13 +74,14 @@ class Network {
                 }
             } catch {
                 do {
-                    let errorResponse = try decoder.decode(ErrorResponse.self, from: data) as! Error
+                    let errorResponse = try decoder.decode(ErrorResponse.self, from: data)
                     DispatchQueue.main.async {
                         completion(nil, errorResponse)
                     }
                 } catch {
+                    errorRes = ErrorResponse(code: error._code, message: error.localizedDescription)
                     DispatchQueue.main.async {
-                        completion(nil, error)
+                        completion(nil, errorRes)
                     }
                 }
             }

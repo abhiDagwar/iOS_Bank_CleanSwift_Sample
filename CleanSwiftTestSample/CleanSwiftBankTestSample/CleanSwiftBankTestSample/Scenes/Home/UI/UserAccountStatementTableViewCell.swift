@@ -8,6 +8,16 @@
 
 import UIKit
 
+/**
+ This class shows the user statement details list
+ 
+ - Parameters:
+    - userTitle: Enter a valid username to login
+    - userDescription: Enter a valid password to login
+    - userDate: Enter a valid password to login
+    - userWithdrawnValue: Enter a valid password to login
+ */
+
 class UserAccountStatementTableViewCell: UITableViewCell {
     
     @IBOutlet weak var userTitle: UILabel!
@@ -23,6 +33,12 @@ class UserAccountStatementTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    /**
+     This function sets the value from a statement list to show the user transaction details like the withdrawal date, withdrawal amount, etc.
+     
+     - Parameters:
+        - statement: A statement details from the statement list.
+     */
     func set(statement: Home.GetAccountStatementList.ViewModel.StatementList) {
         self.userTitle.text = statement.title
         self.userDescription.text = statement.desc

@@ -19,22 +19,33 @@ protocol HomePresentationLogic
     func presentLogout()
 }
 
+/**
+ This class get the Response from the Interactor, format it into a ViewModel and pass the result back to the ViewController. Presenter will be in charge of the presentation logic. This component decides how the data will be presented to the user.
+ 
+ Usage:
+    - **User Details** - Map user details to the view model.
+    - **Statement List** - Map user account statement list to the view model.
+ */
 class HomePresenter: HomePresentationLogic
 {
     weak var viewController: HomeDisplayLogic?
-    
-    
-    
-    func mapUserToViewModel(user: UserAccount) -> Home.GetAccountHolderDetails.ViewModel {
+
+    /**
+     This function map the user details with the viewModel.
+     
+     - Parameters:
+        - user: User details parse response from network.
+     
+     - Returns: mapped user details from viewModel.
+     */
+    private func mapUserToViewModel(user: UserAccount) -> Home.GetAccountHolderDetails.ViewModel {
         let accountHolderName = user.name
         let accountInfo = user.bankAccount + "/" + user.agency
         let accountBalance = user.balance
         
         return Home.GetAccountHolderDetails.ViewModel(name: accountHolderName, bankAccountInfo: accountInfo, balance: accountBalance)
     }
-    
-    
-    
+
     private func handlePresentFetchAccountStementList(statementList: [StatementList])
     {
         let accountStatementList = formatAccountStatementList(statementList: statementList)
@@ -42,6 +53,14 @@ class HomePresenter: HomePresentationLogic
         viewController?.displayAccountStatementList(viewModel: viewModel)
     }
     
+    /**
+     This function map the user account statement details with the viewModel.
+     
+     - Parameters:
+     - user: User account statement details parse response from network.
+     
+     - Returns: mapped user account statement list from viewModel.
+     */
     private func formatAccountStatementList(statementList: [StatementList]?) -> [Home.GetAccountStatementList.ViewModel.StatementList]
     {
         var accountStatementList: [Home.GetAccountStatementList.ViewModel.StatementList] = []
@@ -59,9 +78,10 @@ class HomePresenter: HomePresentationLogic
     }
 }
 
+// MARK: Extension
 extension HomePresenter {
-    // MARK: Display User Account Info
     
+    // MARK: Display User Account Info
     func presentUserDetails(response: Home.GetAccountHolderDetails.Response)
     {
         let user = response.userAccountDetails
@@ -70,7 +90,6 @@ extension HomePresenter {
     }
     
     // MARK: Account Statement List
-    
     func presentAccountStatementList(response: Home.GetAccountStatementList.Response)
     {
         if let statementList = response.accountStatement {
@@ -81,7 +100,6 @@ extension HomePresenter {
     }
     
     // MARK: Logout
-    
     func presentLogout()
     {
         viewController?.displayLogout()

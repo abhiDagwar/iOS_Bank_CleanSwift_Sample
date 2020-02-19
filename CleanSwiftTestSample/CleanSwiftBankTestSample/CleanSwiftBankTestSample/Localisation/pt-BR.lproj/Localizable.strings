@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  CleanSwiftBankTestSample
+
+  Created by New User on 18/02/20.
+  Copyright © 2020 Abhishek D. All rights reserved.
+*/
+"Welcome" = "Bem-Vinda";
+"Your email/password didn't match" = "Seu email / senha não coincidem";
+"Enter username / password to login" = "Digite o nome de usuário / senha para acessar";
+"Something went wrong. Please try again later." = "Algo deu errado. Por favor, tente novamente mais tarde.";

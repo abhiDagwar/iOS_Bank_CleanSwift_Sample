@@ -21,34 +21,49 @@ protocol HomeBusinessLogic
 
 protocol HomeDataStore
 {
-    //var name: String { get set }
-    var userDetails: UserAccount! { get set }
+    var userDetails: UserAccount? { get set }
 }
+
+/**
+ This class acts as a mediator between the Worker (StatementListWorker) and the Presenter. It communicates with the ViewController which passes all the Request params needed for the Worker. Before proceeding to the Worker, a validation is done to check if everything is sent properly. The Worker returns a response and the Interactor passes that response towards the Presenter.
+ 
+ Usage:
+    - The viewController send the request to fetch user account details.
+    - The viewController send the request to fetch user account statement details.
+    - The logout functionality is use to logout the user from the application.
+ */
 
 class HomeInteractor: HomeBusinessLogic, HomeDataStore
 {
+    var userDetails: UserAccount?
+    
     var presenter: HomePresentationLogic?
-    var worker: HomeWorker?
-    var userDetails: UserAccount!
-    
-    
-    
 }
 
 extension HomeInteractor {
-    // MARK: Display User Account Info
-    
+    /**
+     This function send the request to the worker to fetch user account details.
+     
+     - Parameters:
+        - request: Create a request from viewcontroller to fetch the user details from network call.
+     */
     func getUserDetails(request: Home.GetAccountHolderDetails.Request)
     {
-        worker = HomeWorker()
-        worker?.doSomeWork()
+        guard let userDetails = userDetails else {
+            print("Error fetching user details.")
+            return
+        }
         
         let response = Home.GetAccountHolderDetails.Response(userAccountDetails: userDetails)
         presenter?.presentUserDetails(response: response)
     }
     
-    // MARK: Account Statement List
-    
+    /**
+     This function send the request to the worker to fetch user account statement details.
+     
+     - Parameters:
+        - request: Create a request from viewcontroller to fetch the user account statement details from network call.
+     */
     func getAccountStatementList(request: Home.GetAccountStatementList.Request)
     {
         let statementListWorker = StatementListWorker()
@@ -61,8 +76,9 @@ extension HomeInteractor {
         }
     }
     
-    // MARK: Logout
-    
+    /**
+     This function call present the request to presenter to logout from the application.
+     */
     func logout() {
         presenter?.presentLogout()
     }

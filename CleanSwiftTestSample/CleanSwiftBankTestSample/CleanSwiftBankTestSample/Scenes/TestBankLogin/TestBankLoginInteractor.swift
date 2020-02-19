@@ -26,7 +26,6 @@ protocol TestBankLoginDataStore
 class TestBankLoginInteractor: TestBankLoginBusinessLogic, TestBankLoginDataStore
 {
     var presenter: TestBankLoginPresentationLogic?
-    var worker: TestBankLoginWorker?
     var userDetails: UserAccount?
     
     
@@ -42,12 +41,22 @@ extension TestBankLoginInteractor {
         let authenticationWorker = AuthenticationWorker()
         authenticationWorker.login(username: userID ?? "", password: password ?? "") { (success, response, error) in
             if success {
-                authenticationWorker.saveUserID("\(response!.userAccount.userID)")
-                let response = TestBankLogin.Login.Response(success: success, loginResponse: response!)
+                
+                guard let responseData = response else {
+                    return
+                }
+                
+                authenticationWorker.saveUserID("\(responseData.userAccount.userID)")
+                let response = TestBankLogin.Login.Response(success: success, loginResponse: responseData)
                 self.userDetails = response.loginResponse.userAccount
                 self.presenter?.presentLogin(response: response)
             } else {
-                let errorResponse = TestBankLogin.Login.Error(success: success, errorResponse: error!)
+                
+                guard let error = error else {
+                    return
+                }
+                
+                let errorResponse = TestBankLogin.Login.Error(success: success, errorResponse: error)
                 self.presenter?.presentLogin(with: errorResponse)
             }
         }
