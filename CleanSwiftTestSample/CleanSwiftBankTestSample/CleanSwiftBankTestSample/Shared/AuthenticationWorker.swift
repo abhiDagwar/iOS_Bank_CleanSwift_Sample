@@ -7,7 +7,9 @@
 //
 
 import Foundation
-
+/**
+ This class creates a authetication login API. Request Login API call with userID and password. Response will get valid user data information. Error will get for any network error, invalid user info or any other server error.
+ */
 class AuthenticationWorker
 {    
     func login(username: String, password: String, completion: @escaping (Bool, LoginResponse?, ErrorResponse?) -> Void) {

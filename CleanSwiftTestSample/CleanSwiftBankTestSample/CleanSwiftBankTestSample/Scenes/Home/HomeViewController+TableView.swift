@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ This extension will display the user account statement list to the table view.
+ */
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {

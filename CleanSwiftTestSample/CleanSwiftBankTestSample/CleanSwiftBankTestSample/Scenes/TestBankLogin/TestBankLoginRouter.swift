@@ -22,22 +22,25 @@ protocol TestBankLoginDataPassing
   var dataStore: TestBankLoginDataStore? { get }
 }
 
+/**
+ This class takes care for the transition and passing data between view controllers.
+ 
+ There are two protocols declared:
+ - **Routing Logic Protocol**: all the methods used for routing are kept under this protocol.
+ - **Data Passing Protocol**: a protocol that contains the data that needs to be passed to the destination controller.
+ */
 class TestBankLoginRouter: NSObject, TestBankLoginRoutingLogic, TestBankLoginDataPassing
 {
   weak var viewController: TestBankLoginViewController?
   var dataStore: TestBankLoginDataStore?
-  
-    
 
    //MARK: Navigation
-  
   func navigateToHome(source: TestBankLoginViewController, destination: HomeViewController)
   {
     source.show(destination, sender: nil)
   }
   
    //MARK: Passing data
-  
   func passDataToHome(source: TestBankLoginDataStore, destination: inout HomeDataStore)
   {
     destination.userDetails = source.userDetails
@@ -46,7 +49,6 @@ class TestBankLoginRouter: NSObject, TestBankLoginRoutingLogic, TestBankLoginDat
 
 extension TestBankLoginRouter {
     // MARK: Routing
-    
     func routeToHome(segue: UIStoryboardSegue?)
     {
         if let segue = segue {

@@ -36,7 +36,6 @@ protocol HomeDataStore
 class HomeInteractor: HomeBusinessLogic, HomeDataStore
 {
     var userDetails: UserAccount?
-    
     var presenter: HomePresentationLogic?
 }
 

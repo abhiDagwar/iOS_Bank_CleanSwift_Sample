@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+ This class handles the common POST and GET request from the workers.
+ */
 class Network {
     class func taskForPOSTRequest<RequestType: Encodable, ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, body: RequestType, completion: @escaping (ResponseType?, ErrorResponse?) -> Void) {
         

@@ -18,6 +18,12 @@ protocol TestBankLoginDisplayLogic: class
     func displayError(errorModel: TestBankLogin.Login.ErrorModel)
 }
 
+/**
+ This class communicate with the Interactor, and get a response back from the Presenter. Also, when there is a need for transition, it will communicate with the Router.
+ 
+ Usage:
+    - **Login Authetication** - Display login error messages and network error to the UI. If login success, route to the home view controller with user details.
+ */
 class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
 {
     var interactor: TestBankLoginBusinessLogic?
@@ -38,7 +44,6 @@ class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
     }
     
     // MARK: Setup
-    
     private func setup()
     {
         let viewController = self
@@ -54,7 +59,6 @@ class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
     }
     
     // MARK: Routing
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if let scene = segue.identifier {
@@ -66,14 +70,12 @@ class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
     }
     
     // MARK: View lifecycle
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
     }
     
     // MARK: Login
-    
     @IBOutlet weak var userIDTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var messageLabel: UILabel!

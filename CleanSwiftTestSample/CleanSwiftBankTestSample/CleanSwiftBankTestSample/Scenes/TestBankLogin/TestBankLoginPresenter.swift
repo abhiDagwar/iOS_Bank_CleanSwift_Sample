@@ -18,6 +18,13 @@ protocol TestBankLoginPresentationLogic
     func presentLogin(with error: TestBankLogin.Login.Error)
 }
 
+/**
+ This class get the Response from the Interactor, format it into a ViewModel and pass the result back to the ViewController. Presenter will be in charge of the presentation logic. This component decides how the data will be presented to the user.
+ 
+ Usage:
+ - **Login User** - Map success login response to the viewModel.
+ - **Error Login** - Map error login response to the viewModel.
+ */
 class TestBankLoginPresenter: TestBankLoginPresentationLogic
 {
     weak var viewController: TestBankLoginDisplayLogic?
@@ -26,8 +33,12 @@ class TestBankLoginPresenter: TestBankLoginPresentationLogic
 }
 
 extension TestBankLoginPresenter {
-    // MARK: Login
-    
+    /**
+     This function map the sucessful login user details with the viewModel.
+     
+     - Parameters:
+        - response: Success valid user details parse response from network.
+     */
     func presentLogin(response: TestBankLogin.Login.Response?)
     {
         if let response = response {
@@ -38,8 +49,13 @@ extension TestBankLoginPresenter {
         }
     }
     
+    /**
+     This function map the error response to the viewModel.
+     
+     - Parameters:
+        - error: Error details response from network API.
+     */
     func presentLogin(with error: TestBankLogin.Login.Error) {
-        //
         let errorModel = TestBankLogin.Login.ErrorModel(success: error.success, errorResponse: error.errorResponse)
         viewController?.displayError(errorModel: errorModel)
     }

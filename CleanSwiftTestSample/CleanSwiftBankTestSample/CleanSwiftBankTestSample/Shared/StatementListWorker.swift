@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+ This class handles network API for user account statement list.
+ */
 class StatementListWorker {
     func getStatementList(completion: @escaping (Bool, AccountStatement?, ErrorResponse?) -> Void)
     {
