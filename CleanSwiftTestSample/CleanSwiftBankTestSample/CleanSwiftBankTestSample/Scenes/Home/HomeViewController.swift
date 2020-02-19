@@ -16,6 +16,7 @@ protocol HomeDisplayLogic: class
 {
     func displayUserDetails(viewModel: Home.GetAccountHolderDetails.ViewModel)
     func displayAccountStatementList(viewModel: Home.GetAccountStatementList.ViewModel)
+    func displayError(errorModel: Home.GetAccountStatementList.ErrorModel)
     func displayLogout()
 }
 
@@ -150,11 +151,25 @@ extension HomeViewController {
         
     }
     
+    func displayError(errorModel: Home.GetAccountStatementList.ErrorModel)
+    {
+        self.alert(message: errorModel.errorResponse.message, title: "Error")
+    }
+    
     /**
      This function perform the logout to the login view.
      */
     func displayLogout()
     {
         performSegue(withIdentifier: "Login", sender: nil)
+    }
+}
+
+extension UIViewController {
+    func alert(message: String, title: String = "") {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(OKAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 }
