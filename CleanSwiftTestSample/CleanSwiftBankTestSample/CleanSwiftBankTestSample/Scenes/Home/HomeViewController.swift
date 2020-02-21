@@ -111,7 +111,7 @@ class HomeViewController: UIViewController, HomeDisplayLogic
     
     @IBOutlet weak var logoutButton: UIButton!
     
-    @IBAction func logoutButtonTapped(sender: UIButton)
+    @IBAction func logoutButtonTapped(_ sender: Any)
     {
         logout()
     }

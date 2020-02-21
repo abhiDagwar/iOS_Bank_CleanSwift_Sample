@@ -81,6 +81,7 @@
 		A6E26CDC2358F0DB0046356D /* AccountStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E26CD92358F0DB0046356D /* AccountStatement.swift */; };
 		A6FC5E5A23FC83B600729AB9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5E5923FC83B600729AB9 /* HomeRouter.swift */; };
 		A6FC5E5D23FC89BE00729AB9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5E5923FC83B600729AB9 /* HomeRouter.swift */; };
+		B293BEFD23FFDCA80004DCD7 /* HomeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B293BEFC23FFDCA80004DCD7 /* HomeTest.swift */; };
 		B29EB7F923FBE49800AF0F9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B29EB7FB23FBE49800AF0F9D /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -137,6 +138,7 @@
 		A6E26CD52358EDFD0046356D /* HomeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableView.swift"; sourceTree = "<group>"; };
 		A6E26CD92358F0DB0046356D /* AccountStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatement.swift; sourceTree = "<group>"; };
 		A6FC5E5923FC83B600729AB9 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		B293BEFC23FFDCA80004DCD7 /* HomeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTest.swift; sourceTree = "<group>"; };
 		B29EB7F323FBE1EF00AF0F9D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		B29EB7F423FBE1EF00AF0F9D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		B29EB7FA23FBE49800AF0F9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		1BC248F72372C6EA00751AC3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B293BEF923FFDC420004DCD7 /* Home */,
 				1BC248FB2372C94E00751AC3 /* TestBankLogin */,
 			);
 			path = Scenes;
@@ -370,6 +373,14 @@
 			path = Localisation;
 			sourceTree = "<group>";
 		};
+		B293BEF923FFDC420004DCD7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B293BEFC23FFDCA80004DCD7 /* HomeTest.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -543,6 +554,7 @@
 			files = (
 				A6E26CDB2358F0DB0046356D /* AccountStatement.swift in Sources */,
 				A60A6929235756EA00718DF7 /* CleanSwiftBankTestSampleTests.swift in Sources */,
+				B293BEFD23FFDCA80004DCD7 /* HomeTest.swift in Sources */,
 				A60A698A2357579F00718DF7 /* Network.swift in Sources */,
 				A6E26CD72358EDFD0046356D /* HomeViewController+TableView.swift in Sources */,
 				A60A69692357579F00718DF7 /* HomeModels.swift in Sources */,
