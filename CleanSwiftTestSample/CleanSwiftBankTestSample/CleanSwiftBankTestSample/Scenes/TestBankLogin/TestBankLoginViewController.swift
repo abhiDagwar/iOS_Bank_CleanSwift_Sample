@@ -86,14 +86,13 @@ class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
     
     @IBAction func loginButtonTapped(_ sender: Any)
     {
-        login()
-    }
-    
-    private func login()
-    {
         let userID = userIDTextField.text
         let password = passwordTextField.text
-        
+        login(userID: userID, password: password)
+    }
+    
+    func login(userID: String?, password: String?)
+    {
         if !isLoginTextFieldEmpty(userID, password: password) {
             Utils().showActivityIndicator(uiView: self.view)
             let request = TestBankLogin.Login.Request(userID: userID, password: password)
@@ -103,7 +102,7 @@ class TestBankLoginViewController: UIViewController, TestBankLoginDisplayLogic
         }
     }
     
-    func isLoginTextFieldEmpty(_ userID: String?, password: String?) -> Bool
+    private func isLoginTextFieldEmpty(_ userID: String?, password: String?) -> Bool
     {
         if let userID = userID, let password = password {
             if !userID.isEmpty && !password.isEmpty {
