@@ -119,13 +119,11 @@ class TestBankLoginTest: XCTestCase {
         
         // When
         loadView()
-        let isUsernameEmpty = sut.isLoginTextFieldEmpty(userID, password: password)
+        sut.login(userID: userID, password: password)
         
         // Then
-        if isUsernameEmpty {
-            XCTAssertEqual(sut.messageLabel.text, "Enter userID to login.", "loginButtonTapped(_:) should display an error")
+        XCTAssertEqual(sut.messageLabel.text, "Enter username / password to login", "loginButtonTapped(_:) should display an error")
 
-        }
     }
     
     func testDisplayPasswordEmpty()
@@ -136,12 +134,9 @@ class TestBankLoginTest: XCTestCase {
         
         // When
         loadView()
-        let isPasswordEmpty = sut.isLoginTextFieldEmpty(userID, password: password)
+        sut.login(userID: userID, password: password)
         
         // Then
-        if isPasswordEmpty {
-            XCTAssertEqual(sut.messageLabel.text, "Enter password to login.", "loginButtonTapped(_:) should display an error")
-            
-        }
+        XCTAssertEqual(sut.messageLabel.text, "Enter username / password to login", "loginButtonTapped(_:) should display an error")
     }
 }
